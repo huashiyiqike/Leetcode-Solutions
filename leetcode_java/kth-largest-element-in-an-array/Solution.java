@@ -1,3 +1,16 @@
+public class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        PriorityQueue<Integer> largeK = new PriorityQueue<Integer>(k + 1);
+
+        for(int el : nums) {
+            largeK.add(el); // offer?
+            if (largeK.size() == k+1) {
+                largeK.poll();
+            }
+        }
+        return largeK.poll();
+    }
+}
 class Minheap{
     int[] data;
     int size = 0;

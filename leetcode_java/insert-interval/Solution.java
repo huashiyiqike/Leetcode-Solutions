@@ -15,7 +15,6 @@ public class Solution {
             intervals.add(newInterval);
             return  intervals;
         }
-
         while(index < intervals.size()){
             Interval tmp = intervals.get(index);
             if(tmp.start >= newInterval.start){

@@ -3,10 +3,10 @@ public class Solution {
         int maxl = 0;
         int step = 0;
         int cur = 0;
-        while(cur<nums.length-1){
+        while (cur < nums.length - 1) {
             int newmaxl = cur + nums[cur];
-            for(int i = maxl+1; i<=cur;i++){
-                newmaxl = Math.max(newmaxl, i+nums[i]);
+            for (int i = maxl + 1; i <= cur; i++) {
+                newmaxl = Math.max(newmaxl, i + nums[i]);
             }
             maxl = cur;
             cur = newmaxl;
@@ -20,10 +20,10 @@ public class Solution {
     public int jump(int[] nums) {
         int maxl = 0;
         int step = 0;
-        for(int i = 0; i < nums.length-1; ){
-            int newmaxl = i+nums[i];
-            for(int j = maxl+1; j <= i; j++){
-                newmaxl = Math.max(newmaxl, j+nums[j]);
+        for (int i = 0; i < nums.length - 1; ) {
+            int newmaxl = i + nums[i];
+            for (int j = maxl + 1; j <= i; j++) {
+                newmaxl = Math.max(newmaxl, j + nums[j]);
             }
             maxl = i;
             i = newmaxl;
@@ -38,10 +38,10 @@ public class Solution {
         int count = 0;
         int laststep = 0;
 
-        for(int i = 0; i < A.length - 1; /**/){
+        for (int i = 0; i < A.length - 1; /**/) {
 
             int maxstep = i + A[i];
-            for(int j = laststep + 1; j <= i; j++){
+            for (int j = laststep + 1; j <= i; j++) {
                 maxstep = Math.max(maxstep, j + A[j]);
             }
 
@@ -50,7 +50,7 @@ public class Solution {
 
             count++;
         }
-        
+
         return count;
     }
 }

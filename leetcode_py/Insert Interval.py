@@ -11,14 +11,13 @@ class Solution:
     def insert(self, intervals, newInterval):
         if not intervals:
             return [newInterval]
-        # intervals.append(newInterval)
-        # intervals.sort(key=lambda x:x.start)
-        for idx, item in enumerate(intervals):
-            if item.start >= newInterval.start:
-                intervals.insert(idx, newInterval)
+
+        idx = 0
+        while idx < len(intervals):
+            if intervals[idx].start >= newInterval.start:
                 break
-        if newInterval.start > intervals[-1].start:
-            intervals.append(newInterval)
+            idx += 1
+        intervals.insert(idx, newInterval)
 
         res = [intervals[0]]
         for i in intervals:

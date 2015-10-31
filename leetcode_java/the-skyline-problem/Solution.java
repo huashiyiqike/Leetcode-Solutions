@@ -1,26 +1,71 @@
-// http://www.cnblogs.com/easonliu/p/4531020.html
+import java.lang.Integer;
+import java.lang.Override;
 import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+
 public class Solution {
-    public List<int[]> merge(List<int[]> left, List<int[]> right){
+    public List<int[]> getSkyline(int[][] buildings) {
+        PriorityQueue<int[]> queue = new PriorityQueue<int[]>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o2[0] - o1[0];
+            }
+        });
+        List<int[]> res = new LinkedList<>();
+        int i = 0;
+        int furthest;
+        Arrays.sort(buildings, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
+            }
+        });
+        while (!queue.isEmpty() || i < buildings.length) {
+            if (queue.isEmpty() || (i < buildings.length
+                    && buildings[i][0] <= queue.peek()[1])) {
+                furthest = buildings[i][0];
+                while (i < buildings.length && buildings[i][0] <= furthest) {
+                    queue.offer(new int[]{buildings[i][2], buildings[i][1]});
+                    i++;
+                }
+            } else {
+                furthest = queue.peek()[1];
+                while (!queue.isEmpty() && queue.peek()[1] <= furthest) {
+                    queue.poll();
+                }
+            }
+            int height = queue.isEmpty() ? 0 : queue.peek()[0];
+            if (res.isEmpty() || height != res.get(res.size() - 1)[1]) {
+                res.add(new int[]{furthest, height});
+            }
+        }
+        return res;
+    }
+}
+
+public class Solution {
+    public List<int[]> merge(List<int[]> left, List<int[]> right) {
         int i = 0, j = 0;
         int h1 = -1, h2 = -1;
         ArrayList<int[]> res = new ArrayList<>();
-        while(i < left.size() && j < right.size()){
-            if(left.get(i)[0] < right.get(i)[0]){
+        while (i < left.size() && j < right.size()) {
+            if (left.get(i)[0] < right.get(i)[0]) {
                 h1 = left.get(i)[0];
                 int[] newpoint = {left.get(i)[1], Math.max(h1, h2)};
-                if(res.isEmpty() || res.get(res.size()-1)[1] != newpoint[1])
+                if (res.isEmpty() || res.get(res.size() - 1)[1] != newpoint[1])
                     res.add(newpoint);
                 i++;
-            }
-            else if(right.get(i)[0] < left.get(i)[0]){
+            } else if (right.get(i)[0] < left.get(i)[0]) {
                 h2 = right.get(i)[0];
                 int[] newpoint = {right.get(j)[1], Math.max(h1, h2)};
-                if(res.isEmpty() || res.get(res.size()-1)[1] != newpoint[1])
+                if (res.isEmpty() || res.get(res.size() - 1)[1] != newpoint[1])
                     res.add(newpoint);
                 j++;
-            }
-            else {
+            } else {
                 h1 = left.get(i)[0];
                 h2 = right.get(i)[0];
                 int[] newpoint = {left.get(i)[1], Math.max(h1, h2)};
@@ -30,32 +75,32 @@ public class Solution {
                 i++;
             }
         }
-        while(i < left.size()){
+        while (i < left.size()) {
             if (res.isEmpty() || res.get(res.size() - 1)[1] != left.get(i)[1])
                 res.add(left.get(i));
             i++;
         }
-        while(j < right.size()){
+        while (j < right.size()) {
             if (res.isEmpty() || res.get(res.size() - 1)[1] != right.get(j)[1])
                 res.add(right.get(j));
             j++;
         }
         return res;
     }
+
     public List<int[]> getSkyline(int[][] buildings) {
         List<int[]> res = new ArrayList<>();
-        if(buildings.length == 0) return null;
-        else if(buildings.length == 1){
+        if (buildings.length == 0) return null;
+        else if (buildings.length == 1) {
             int[] tmp = {buildings[0][0], buildings[0][2]};
             int[] tmp2 = {buildings[0][1], 0};
             res.add(tmp);
             res.add(tmp2);
             return res;
-        }
-        else{
+        } else {
             List<int[]> left = new ArrayList<>(), right = new ArrayList<>();
-            for(int i = 0 ; i < buildings.length; i++){
-                if(i < buildings.length/2) left.add(buildings[i]);
+            for (int i = 0; i < buildings.length; i++) {
+                if (i < buildings.length / 2) left.add(buildings[i]);
                 else right.add(buildings[i]);
             }
             return merge(left, right);
@@ -65,15 +110,15 @@ public class Solution {
 
 
 public class Solution {
-    static int li(int[] building){
+    static int li(int[] building) {
         return building[0];
     }
 
-    static int ri(int[] building){
+    static int ri(int[] building) {
         return building[1];
     }
 
-    static int hi(int[] building){
+    static int hi(int[] building) {
         return building[2];
     }
 
@@ -87,22 +132,22 @@ public class Solution {
             this.buildings = buildings;
         }
 
-        boolean hasNext(){
+        boolean hasNext() {
             return p < buildings.length || !inserted.isEmpty();
         }
 
 
-        int[] next(){
+        int[] next() {
 
-            if(p < buildings.length && !inserted.isEmpty()){
+            if (p < buildings.length && !inserted.isEmpty()) {
 
-                if(li(buildings[p]) < li(inserted.peek())){
+                if (li(buildings[p]) < li(inserted.peek())) {
                     return buildings[p++];
-                }else{
+                } else {
                     return inserted.poll();
                 }
 
-            } else if(p < buildings.length ){
+            } else if (p < buildings.length) {
                 return buildings[p++];
             } else { // !inserted.isEmpty())
                 return inserted.poll();
@@ -110,7 +155,7 @@ public class Solution {
 
         }
 
-        void insert(int[] building){
+        void insert(int[] building) {
             inserted.add(building);
         }
     }
@@ -118,25 +163,25 @@ public class Solution {
     public List<int[]> getSkyline(int[][] buildings) {
 
         List<int[]> all = new ArrayList<>();
-        if(buildings.length == 0) return all;
+        if (buildings.length == 0) return all;
 
         SortedBuilds sortedBuilds = new SortedBuilds(buildings);
 
         int[] a = sortedBuilds.next();
 
-        while (sortedBuilds.hasNext()){
+        while (sortedBuilds.hasNext()) {
             int[] b = sortedBuilds.next();
 
-            if(ri(a) == li(b) && hi(a) == hi(b)){
+            if (ri(a) == li(b) && hi(a) == hi(b)) {
                 a = new int[]{li(a), ri(b), hi(a)};
                 continue;
             }
 
             // a.r b.l
-            if(ri(a) <= li(b)){
+            if (ri(a) <= li(b)) {
                 all.add(new int[]{li(a), hi(a)});
 
-                if(ri(a) < li(b)){
+                if (ri(a) < li(b)) {
                     all.add(new int[]{ri(a), 0});
                 }
 
@@ -145,16 +190,16 @@ public class Solution {
             }
 
             // a.l b.l
-            if(li(a) == li(b)){
+            if (li(a) == li(b)) {
 
                 // make a higher than b
-                if(hi(a) < hi(b)){
+                if (hi(a) < hi(b)) {
                     sortedBuilds.insert(a);
                     a = b;
                     continue;
                 }
 
-                if(ri(a) < ri(b)){
+                if (ri(a) < ri(b)) {
                     sortedBuilds.insert(new int[]{ri(a), ri(b), hi(b)});
                 }
                 // else drop b (b inside a)
@@ -162,11 +207,11 @@ public class Solution {
             }
 
             //
-            if(hi(a) < hi(b)){
+            if (hi(a) < hi(b)) {
 
                 all.add(new int[]{li(a), hi(a)});
 
-                if(ri(a) > ri(b)){
+                if (ri(a) > ri(b)) {
                     sortedBuilds.insert(new int[]{ri(b), ri(a), hi(a)});
                 }
 
@@ -176,7 +221,7 @@ public class Solution {
 
             // a.h >= b.h
 
-            if(ri(a) < ri(b)){
+            if (ri(a) < ri(b)) {
                 sortedBuilds.insert(new int[]{ri(a), ri(b), hi(b)});
             }
             // else drop b (b inside a)

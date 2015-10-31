@@ -1,15 +1,18 @@
 import heapq
+
+
 class Solution:
     # @param {integer[]} nums
     # @param {integer} k
     # @return {integer}
     def findKthLargest(self, nums, k):
-        heap=[]
+        heap = []
         for i in nums:
-            heapq.heappush(heap,-i)
+            heapq.heappush(heap, -i)
         for i in range(k):
-            res=-heapq.heappop(heap)
+            res = -heapq.heappop(heap)
         return res
+
 
 class MinHeap:
     def __init__(self):
@@ -17,18 +20,18 @@ class MinHeap:
         self.size = 0
 
     def parent(self, i):
-        return (i-1)/2
+        return (i - 1) / 2
 
     def left_child(self, i):
-        return 2*i+1
+        return 2 * i + 1
 
     def right_child(self, i):
-        return 2*i+2
+        return 2 * i + 2
 
     def add(self, num):
         self.data.append(num)
         self.size += 1
-        i = self.size-1
+        i = self.size - 1
         while i > 0 and self.data[i] < self.data[self.parent(i)]:
             tmp = self.data[self.parent(i)]
             self.data[self.parent(i)] = self.data[i]
@@ -64,11 +67,12 @@ class Solution:
                 minheap.heapify(0)
         return minheap.data[0]
 
+
 class Solution:
     def partition(self, l, left, right):
         if left < right:
             pivot, pivot_val = left, l[left]
-            for i in range(pivot+1, right+1):
+            for i in range(pivot + 1, right + 1):
                 if l[i] > pivot_val:  # ask for kth largest, sort in reverse order, not <
                     pivot += 1
                     l[i], l[pivot] = l[pivot], l[i]
@@ -84,21 +88,23 @@ class Solution:
     def findKthLargest(self, nums, k):
         pivot = -1
         left = 0
-        right = len(nums)-1
-        while pivot != k-1:
+        right = len(nums) - 1
+        while pivot != k - 1:
             pivot = self.partition(nums, left, right)
-            if pivot < k-1:
-                left = pivot+1
-            elif pivot > k-1:
-                right = pivot-1
+            if pivot < k - 1:
+                left = pivot + 1
+            elif pivot > k - 1:
+                right = pivot - 1
         return nums[pivot]
 
-if __name__=="__main__":
-    a=Solution()
+
+if __name__ == "__main__":
+    a = Solution()
     print a.findKthLargest([2, 1], 1)
 
-
 from heapq import *
+
+
 class Solution:
     # @param {integer[]} nums
     # @param {integer} k
@@ -114,38 +120,43 @@ class Solution:
                 heappush(heap, nums[i])
         return nlargest(k, heap)[-1]
 
-if __name__=="__main__":
-    a=Solution()
-    print a.findKthLargest([-1, 2, 0],2)
-    print a.findKthLargest([2000-i for i in range(2000)],1999)
-    print a.findKthLargest([3,2,1,5,6,4],2)
-    print a.findKthLargest([3,2,1,5,6,4],4)
-    for i in range(1,7):
-        print a.findKthLargest([3,2,1,5,6,4],i)
 
+if __name__ == "__main__":
+    a = Solution()
+    print a.findKthLargest([-1, 2, 0], 2)
+    print a.findKthLargest([2000 - i for i in range(2000)], 1999)
+    print a.findKthLargest([3, 2, 1, 5, 6, 4], 2)
+    print a.findKthLargest([3, 2, 1, 5, 6, 4], 4)
+    for i in range(1, 7):
+        print a.findKthLargest([3, 2, 1, 5, 6, 4], i)
 
 import sys
+
 sys.setrecursionlimit(10000000)
+
+
 class Solution:
     def findKthLargest(self, nums, k):
-        flag,thres,i=nums[0],0,1
-        while i<len(nums):
-            if nums[i]>flag:
-                thres+=1
-                nums[thres],nums[i]=nums[i],nums[thres]
-            i+=1
-        nums[thres],nums[0]=nums[0],nums[thres]
-        if thres+1==k:return nums[thres]
-        elif thres+1>k: return self.findKthLargest(nums[:thres], k)
-        else: return self.findKthLargest(nums[thres+1:], k-thres-1)
-  
-if __name__=="__main__":
-    a=Solution()
-    print a.findKthLargest([-1, 2, 0],2)
-    print a.findKthLargest([2000-i for i in range(2000)],1999)
-    print a.findKthLargest([3,2,1,5,6,4],2)
-    print a.findKthLargest([3,2,1,5,6,4],4)
-    for i in range(1,7): 
-        print a.findKthLargest([3,2,1,5,6,4],i)
+        flag, thres, i = nums[0], 0, 1
+        while i < len(nums):
+            if nums[i] > flag:
+                thres += 1
+                nums[thres], nums[i] = nums[i], nums[thres]
+            i += 1
+        nums[thres], nums[0] = nums[0], nums[thres]
+        if thres + 1 == k:
+            return nums[thres]
+        elif thres + 1 > k:
+            return self.findKthLargest(nums[:thres], k)
+        else:
+            return self.findKthLargest(nums[thres + 1:], k - thres - 1)
 
 
+if __name__ == "__main__":
+    a = Solution()
+    print a.findKthLargest([-1, 2, 0], 2)
+    print a.findKthLargest([2000 - i for i in range(2000)], 1999)
+    print a.findKthLargest([3, 2, 1, 5, 6, 4], 2)
+    print a.findKthLargest([3, 2, 1, 5, 6, 4], 4)
+    for i in range(1, 7):
+        print a.findKthLargest([3, 2, 1, 5, 6, 4], i)

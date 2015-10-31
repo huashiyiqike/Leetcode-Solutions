@@ -21,8 +21,7 @@ public class Solution {
         if(head.next == null) return new TreeNode(head.val);
         ListNode fast = head.next.next, slow = head;
         while(fast != null && fast.next != null){
-            fast = fast.next;
-            fast = fast.next;
+            fast = fast.next.next;
             slow = slow.next;
         }
         TreeNode newhead = new TreeNode(slow.next.val);

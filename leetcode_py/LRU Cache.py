@@ -18,7 +18,9 @@ class LRUCache:
             self.cache.popitem(last=False)
         self.cache[key] = value
 
+
 from collections import defaultdict
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -42,12 +44,14 @@ class LinkedList:
         if self.tail == node:
             self.tail = node.pre
 
+
 class Node:
     def __init__(self, key, value):
         self.key = key
         self.val = value
         self.next = None
         self.pre = None
+
 
 class LRUCache:
     # @param capacity, an integer
@@ -60,7 +64,7 @@ class LRUCache:
     def get(self, key):
         if key in self.dict:
             self.queue.delete(self.dict[key])
-            self.dict[key].pre, self.dict[key].next = None, None # can be moved to List operation
+            self.dict[key].pre, self.dict[key].next = None, None  # can be moved to List operation
             self.queue.front_push(self.dict[key])
             return self.dict[key].val
         else:
@@ -79,81 +83,82 @@ class LRUCache:
         self.dict[key] = Node(key, value)
         self.queue.front_push(self.dict[key])
 
+
 class Node:
-    def __init__(self,key,value):
-        self.key=key
-        self.val=value
-        self.pre=None
-        self.next=None
-        
+    def __init__(self, key, value):
+        self.key = key
+        self.val = value
+        self.pre = None
+        self.next = None
+
+
 class LRUCache:
     # @param capacity, an integer
     def __init__(self, capacity):
-        self.head=None
-        self.tail=None
-        self.dicts={}
-        self.capacity=capacity
+        self.head = None
+        self.tail = None
+        self.dicts = {}
+        self.capacity = capacity
 
     # @return an integer
     def get(self, key):
-        res=-1
-        tmphead=self.dicts.get(key)
-        if tmphead!=None:
-            res=tmphead.val
+        res = -1
+        tmphead = self.dicts.get(key)
+        if tmphead != None:
+            res = tmphead.val
             self.movetohead(tmphead)
 
         return res
 
-    def movetohead(self,tmphead):
-        if self.head!=tmphead:
-            tmphead.pre.next=tmphead.next
-            if self.tail!=tmphead:
-                tmphead.next.pre=tmphead.pre
+    def movetohead(self, tmphead):
+        if self.head != tmphead:
+            tmphead.pre.next = tmphead.next
+            if self.tail != tmphead:
+                tmphead.next.pre = tmphead.pre
             else:
-                self.tail=self.tail.pre
-            tmphead.next=self.head
-            self.head.pre=tmphead
-            self.head=tmphead
+                self.tail = self.tail.pre
+            tmphead.next = self.head
+            self.head.pre = tmphead
+            self.head = tmphead
+
     # @param key, an integer
     # @param value, an integer
     # @return nothing
     def set(self, key, value):
-        tmphead=self.dicts.get(key)
+        tmphead = self.dicts.get(key)
         if tmphead != None:
-            tmphead.val=value
+            tmphead.val = value
             self.movetohead(tmphead)
-    
+
         else:
-            tmphead=Node(key,value)
- 
-            if len(self.dicts)==self.capacity:
+            tmphead = Node(key, value)
+
+            if len(self.dicts) == self.capacity:
                 print self.dicts.pop(self.tail.key).val
                 if self.tail.pre:
-                    self.tail.pre.next=None
-                    self.tail=self.tail.pre
+                    self.tail.pre.next = None
+                    self.tail = self.tail.pre
                 else:
-                    self.tail=tmphead
-                
-            if self.head!=None:
-                tmphead.next=self.head
-                self.head.pre=tmphead
-                self.head=tmphead
-            else:
-                self.head=tmphead
-                self.tail=tmphead
-                
-            self.dicts[key]=tmphead
-       
-        
+                    self.tail = tmphead
 
-                    
-if __name__=="__main__":
-    a=LRUCache(3)
-    a.set(7,7)
-    a.set(0,0)
-    a.set(1,1)
-    a.set(2,2)
+            if self.head != None:
+                tmphead.next = self.head
+                self.head.pre = tmphead
+                self.head = tmphead
+            else:
+                self.head = tmphead
+                self.tail = tmphead
+
+            self.dicts[key] = tmphead
+
+
+if __name__ == "__main__":
+    a = LRUCache(3)
+    a.set(7, 7)
+    a.set(0, 0)
+    a.set(1, 1)
+    a.set(2, 2)
     a.get(0)
-    a.set(3,3)
-    a.set(0,0)
-    a.set(4,4)
+    a.set(3, 3)
+    a.set(0, 0)
+    a.set(4, 4)

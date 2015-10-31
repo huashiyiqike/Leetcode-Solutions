@@ -8,25 +8,20 @@
  * }
  */
 public class Solution {
-    TreeNode first = null;
-    TreeNode second = null; //first larger than follow, second smaller than pre
-    public TreeNode helper(TreeNode root, TreeNode pre){
-        if(root.left != null) pre = helper(root.left, pre);
+    TreeNode first = null, second = null, pre = null;
+     //first larger than follow, second smaller than pre
+    public void helper(TreeNode root){
+        if(root.left != null) helper(root.left);
         if(pre != null && root.val < pre.val){
-            if(first == null) {
+            if(first == null)
                 first = pre;
-                second = root;
-            }
-            else{
-                second = root;
-            }
+            second = root;
         }
         pre = root;
-        if(root.right != null) pre = helper(root.right, pre);
-        return pre;
+        if(root.right != null) helper(root.right);
     }
     public void recoverTree(TreeNode root) {
-        helper(root, null);
+        helper(root);
         int tmp = first.val;
         first.val = second.val;
         second.val = tmp;

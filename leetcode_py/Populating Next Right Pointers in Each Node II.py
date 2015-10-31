@@ -25,6 +25,7 @@ class Solution:
                 root = root.next
             root = dummychild.next
 
+
 class Solution:
     def first(self, root):
         while root:
@@ -52,24 +53,25 @@ class Solution:
             self.helper(root)
             root = self.first(root)
 
+
 # not O(1)
 class Solution:
     # @param root, a tree node
     # @return nothing
     def connect(self, root):
-        if root==None:
+        if root == None:
             return
-        lists=[]
+        lists = []
         lists.append(root)
         while lists:
-            next=[]
-            for i,item in enumerate(lists):
-                if i!=0:
-                    lists[i-1].next=lists[i]
-                if i==len(lists)-1:
-                    lists[i].next=None
+            next = []
+            for i, item in enumerate(lists):
+                if i != 0:
+                    lists[i - 1].next = lists[i]
+                if i == len(lists) - 1:
+                    lists[i].next = None
                 if item.left:
                     next.append(item.left)
                 if item.right:
                     next.append(item.right)
-            lists=next
+            lists = next

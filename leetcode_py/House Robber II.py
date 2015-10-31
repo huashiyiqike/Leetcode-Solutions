@@ -18,9 +18,6 @@ class Solution:
             dp[i] = max(dp[i-2] + nums[i], dp[i-1])
         return max(res, dp[-1])
 
-
-
-
 class Solution:
     def f(self, nums, start, end):
         dp = [0] * (end + 2 - start + 1)

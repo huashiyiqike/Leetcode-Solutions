@@ -5,13 +5,9 @@ public class Solution {
             res.add(path);
             return;
         }
-        String newpathleft = path+"(", newpathright = path + ")";
-        if(left > right){
-            helper(res, newpathright, left, right+1, n);
-        }
-        helper(res, newpathleft, left+1, right, n);
-
-
+       // String newpathleft = path+"(", newpathright = path + ")";
+        helper(res, path + ")", left, right+1, n);
+        helper(res, path+"(", left+1, right, n);
     }
     public List<String> generateParenthesis(int n) {
         int left = 0, right = 0;

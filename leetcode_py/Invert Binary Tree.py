@@ -8,12 +8,12 @@ class Solution:
     # @param {TreeNode} root
     # @return {TreeNode}
     def invertTree(self, root):
-        stack=[root]
+        stack = [root]
         while stack:
-            tmp=stack.pop()
+            tmp = stack.pop()
             if not tmp:
                 continue
-            tmp.left,tmp.right=tmp.right,tmp.left
+            tmp.left, tmp.right = tmp.right, tmp.left
             stack.append(tmp.left)
             stack.append(tmp.right)
         return root
@@ -25,7 +25,7 @@ class Solution:
     def invertTree(self, root):
         if not root:
             return root
-        root.left,root.right=root.right,root.left
+        root.left, root.right = root.right, root.left
         self.invertTree(root.left)
         self.invertTree(root.right)
         return root

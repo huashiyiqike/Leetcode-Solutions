@@ -8,9 +8,7 @@ public class Solution {
     }
     return res;
   }
-}
-
-  public int hammingWeight(int n) {
+  public int hammingWeight2(int n) {
     int count = 0;
     while (n != 0) {
       if ((n&1) == 1) {
@@ -20,6 +18,9 @@ public class Solution {
     }
     return count;
   }
+
+}
+
 
 public class Solution {
   // copy from JDK Integer.bitCount

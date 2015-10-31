@@ -39,7 +39,6 @@ class Solution:
                 res -= num
         return res
 
-
         # while len(stack) > 1:
         #     num = stack.pop()
         #     n = stack.pop()

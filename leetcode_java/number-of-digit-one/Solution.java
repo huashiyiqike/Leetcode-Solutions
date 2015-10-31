@@ -1,3 +1,17 @@
+import java.lang.Math;
+
+public class Solution {
+    public int countDigitOne(int n) {
+        // count 1 in every bit
+        int res = 0;
+        for(long i = 1 ; i <= n; i *= 10){
+            long k = n/i, r = n % i;
+            res += (k + 8) / 10 * i + ((k%10 == 1)?(r+1):0);
+        }
+        return res;
+    }
+}
+
 public class Solution {
     public int countDigitOne(int n) {
         // count 1 in every bit

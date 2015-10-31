@@ -1,3 +1,71 @@
+import java.lang.Integer;
+import java.util.TreeMap;
+
+
+public class LRUCache {
+    LinkedHashMap<Integer, Integer> cache = new LinkedHashMap<>();
+    //TreeMap<Integer, Integer> cache = new TreeMap<>();
+    int _capacity;
+    public LRUCache(int capacity) {
+        _capacity = capacity;
+    }
+
+    public int get(int key) {
+        if(cache.containsKey(key)){
+            int val = cache.get(key);
+            cache.remove(key);
+            cache.put(key, val);
+            return val;
+        }
+        else return -1;
+    }
+
+    public void set(int key, int value) {
+        if(cache.containsKey(key)){
+            cache.remove(key);
+        }else{
+            if(_capacity == cache.size()){
+                Iterator iterator = cache.keySet().iterator();
+                cache.remove(iterator.next());
+            }
+        }
+        cache.put(key, value);
+    }
+}
+
+
+public class LRUCache {
+
+    TreeMap<Integer, Integer> cache = new TreeMap<>();
+    int _capacity;
+    public LRUCache(int capacity) {
+        _capacity = capacity;
+    }
+
+    public int get(int key) {
+        if(cache.containsKey(key)){
+            int val = cache.get(key);
+            cache.remove(key);
+            cache.put(key, val);
+            return val;
+        }
+        else return -1;
+    }
+
+    public void set(int key, int value) {
+        if(cache.containsKey(key)){
+            cache.remove(key);
+        }else{
+            if(_capacity == cache.size()){
+                cache.remove(cache.firstKey());
+                _capacity--;
+            }
+            _capacity++;
+        }
+        cache.put(key, value);
+    }
+}
+
 public class LRUCache {
     
     static class Entry {

@@ -1,11 +1,12 @@
 from heapq import *
+
 class Solution:
     # @param {integer[][]} buildings
     # @return {integer[][]}
     def getSkyline(self, buildings):
         if not buildings:
             return []
-        heap =[]
+        heap = []
         res = []
         i = 0
         while i < len(buildings):
@@ -57,13 +58,17 @@ class Solution:
 
         return res
 
+
 if __name__ == "__main__":
     a = Solution()
-    print a.getSkyline([[0,2,3],[2,5,3]])
-    print a.getSkyline([[2,13,10],[10,17,25],[12,20,14]])
-    print a.getSkyline([[1,2,1],[1,2,2],[1,2,3]])
-    print a.getSkyline([[1,2,1],[2147483646,2147483647,2147483647]])
-    print a.getSkyline([[2,4,70],[3,8,30],[6,100,41],[7,15,70],[10,30,102],[15,25,76],[60,80,91],[70,90,72],[85,120,59]])
+    print a.getSkyline([[0, 2, 3], [2, 5, 3]])
+    print a.getSkyline([[2, 13, 10], [10, 17, 25], [12, 20, 14]])
+    print a.getSkyline([[1, 2, 1], [1, 2, 2], [1, 2, 3]])
+    print a.getSkyline([[1, 2, 1], [2147483646, 2147483647, 2147483647]])
+    print a.getSkyline(
+        [[2, 4, 70], [3, 8, 30], [6, 100, 41], [7, 15, 70], [10, 30, 102], [15, 25, 76], [60, 80, 91], [70, 90, 72],
+         [85, 120, 59]])
+
 
 class Solution:
     def merge(self, left, right):
@@ -98,7 +103,7 @@ class Solution:
             i += 1
         while j < len(right):
             # new = [right[j][0], max(h1, h2)]
-            if not res or res[-1][1] != right[j][1]: # new[1]:
+            if not res or res[-1][1] != right[j][1]:  # new[1]:
                 res.append(new)
             j += 1
         return res
@@ -107,10 +112,12 @@ class Solution:
         if not LRH:
             return []
         elif len(LRH) == 1:
-            return [[LRH[0][0], LRH[0][2]],[LRH[0][1], 0]]
-        left = self.getSkyline(LRH[:len(LRH)/2])
-        right = self.getSkyline(LRH[len(LRH)/2:])
+            return [[LRH[0][0], LRH[0][2]], [LRH[0][1], 0]]
+        left = self.getSkyline(LRH[:len(LRH) / 2])
+        right = self.getSkyline(LRH[len(LRH) / 2:])
         return self.merge(left, right)
+
+
 #
 #
 # class Solution:
@@ -159,7 +166,7 @@ class Solution:
         i, n = 0, len(LRH)
         liveHR = []
         while i < n or liveHR:
-            #print liveHR
+            # print liveHR
             if not liveHR or i < n and LRH[i][0] <= -liveHR[0][1]:
                 x = LRH[i][0]
                 while i < n and LRH[i][0] == x:
@@ -175,15 +182,16 @@ class Solution:
         return skyline
 
 
-
 if __name__ == "__main__":
     a = Solution()
-    print a.getSkyline([[2,13,10],[10,17,25],[12,20,14]])
-    print a.getSkyline([[1,2,1],[1,2,2],[1,2,3]])
-    print a.getSkyline([[1,2,1],[2147483646,2147483647,2147483647]])
-    print a.getSkyline([[2,4,70],[3,8,30],[6,100,41],[7,15,70],[10,30,102],[15,25,76],[60,80,91],[70,90,72],[85,120,59]])
+    print a.getSkyline([[2, 13, 10], [10, 17, 25], [12, 20, 14]])
+    print a.getSkyline([[1, 2, 1], [1, 2, 2], [1, 2, 3]])
+    print a.getSkyline([[1, 2, 1], [2147483646, 2147483647, 2147483647]])
+    print a.getSkyline(
+        [[2, 4, 70], [3, 8, 30], [6, 100, 41], [7, 15, 70], [10, 30, 102], [15, 25, 76], [60, 80, 91], [70, 90, 72],
+         [85, 120, 59]])
 
-#
-# if __name__ == '__main__':
-#     a = Solution()
-#     print a.getSkyline([ [2,9,10], [3,7,15], [5,12,12], [15, 20, 10], [19, 24, 8] ])
+    #
+    # if __name__ == '__main__':
+    #     a = Solution()
+    #     print a.getSkyline([ [2,9,10], [3,7,15], [5,12,12], [15, 20, 10], [19, 24, 8] ])

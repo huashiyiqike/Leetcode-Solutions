@@ -7,7 +7,7 @@ class Solution:
         dicts[0] = 'Z'
         res = ''
         while num > 0:
-            res = dicts[num % 26] + res
+            res += dicts[num % 26]
             if num % 26 == 0:
                 num -= 26
             num /= 26

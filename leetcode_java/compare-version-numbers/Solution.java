@@ -1,13 +1,5 @@
 import java.util.*;
 public class Solution {
-    public String reduce(String s){
-        int i = 0;
-        for(; i < s.length(); i++){
-            if(s.charAt(i) != '0') break;
-        }
-        if(i == s.length()) return "0";
-        return s.substring(i, s.length());
-    }
     public int compareVersion(String version1, String version2) {
         List<String> v1 = Arrays.asList(version1.split("\\.")),
                 v2 = Arrays.asList(version2.split("\\."));

@@ -26,29 +26,29 @@ public class Solution {
         return -1;
     }
 }
-
-
-public class Solution {
-    public int search(int[] nums, int target) {
-        int l = 0, r = nums.length-1;
-        while(l <= r){
-            int mid = r+(l-r)/2;
-            if(nums[mid] < nums[r]){
-                if(target > nums[mid]) {
-                    if (target < nums[r]) l = mid + 1;
-                    else if(target > nums[r]) r = mid;
-                }
-
-                else if(target < nums[mid]) r = mid - 1;
-                else return mid;
-            }
-            else if(nums[mid] > nums[r]){
-                if(target > nums[mid]) l = mid + 1;
-                else if(target < nums[mid])
-            }
-        }
-    }
-}
+//
+//
+//public class Solution {
+//    public int search(int[] nums, int target) {
+//        int l = 0, r = nums.length-1;
+//        while(l <= r){
+//            int mid = r+(l-r)/2;
+//            if(nums[mid] < nums[r]){
+//                if(target > nums[mid]) {
+//                    if (target < nums[r]) l = mid + 1;
+//                    else if(target > nums[r]) r = mid;
+//                }
+//
+//                else if(target < nums[mid]) r = mid - 1;
+//                else return mid;
+//            }
+//            else if(nums[mid] > nums[r]){
+//                if(target > nums[mid]) l = mid + 1;
+//                else if(target < nums[mid])
+//            }
+//        }
+//    }
+//}
 
 public class Solution {
     public int search(int[] A, int target) {

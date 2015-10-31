@@ -20,8 +20,6 @@ public class Solution {
 
 public class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
-        
-        
         int start = 0;
         int from_start = 0;
         

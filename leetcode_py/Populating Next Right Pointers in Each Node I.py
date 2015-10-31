@@ -33,6 +33,7 @@ class Solution:
             else:
                 root.right.next = None
             root = root.next
+
     # @param root, a tree node
     # @return nothing
     def connect(self, root):

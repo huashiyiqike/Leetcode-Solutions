@@ -15,7 +15,6 @@ class Solution:
         return res
 
 
-
 class Solution:
     def helper(self, n, k, idx, path):
         if len(path) == k:
@@ -29,6 +28,7 @@ class Solution:
     # @return {integer[][]}
     def combine(self, n, k):
         return self.helper(n, k, 1, [])
+
 
 class Solution:
     def helper(self, n, k, idx, res, path):
@@ -48,17 +48,19 @@ class Solution:
         self.helper(n, k, 1, res, [])
         return res
 
+
 class Solution:
     def find(self, limit, res, path, remain_count, pos):
         if remain_count == 0:
             res.append(path)
             return
-        for i in range(pos,limit):
-            self.find(limit, res, path + [i], remain_count - 1, i+1)
+        for i in range(pos, limit):
+            self.find(limit, res, path + [i], remain_count - 1, i + 1)
+
     # @param {integer} n
     # @param {integer} k
     # @return {integer[][]}
     def combine(self, n, k):
         res = []
-        self.find(n+1, res, [], k, 1)
+        self.find(n + 1, res, [], k, 1)
         return res

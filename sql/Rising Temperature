@@ -1,0 +1,10 @@
+select distinct b.Id from Weather a, Weather b
+where DATEDIFF(a.Date, b.Date)=-1 and a.Temperature < b.Temperature
+
+SELECT Id FROM (
+    SELECT CASE
+        WHEN Temperature > @prevtemp AND DATEDIFF(Date, @prevdate) = 1 THEN Id ELSE NULL END AS Id,
+        @prevtemp:=Temperature,
+        @prevdate:=Date
+    FROM Weather, (SELECT @prevtemp:=NULL) AS A, (SELECT @prevdate:=NULL) AS B ORDER BY Date ASC
+) AS D WHERE Id IS NOT NULL

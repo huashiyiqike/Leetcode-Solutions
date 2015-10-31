@@ -35,7 +35,6 @@ public class WordDictionary {
                 else if(t.next.containsKey(c)){
                     TrieNode tmp = t.next.get(c);
                     next.add(tmp);
-
                 }
             }
             if(next.isEmpty()) return false;

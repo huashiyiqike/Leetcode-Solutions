@@ -1,3 +1,45 @@
+
+import java.lang.reflect.Array;
+import java.util.*;
+
+public class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int[] pre = new int[numCourses];
+        List<List<Integer>> next = new ArrayList<>();
+        for(int i = 0; i < numCourses; i++) next.add(new ArrayList<Integer>());
+        Arrays.fill(pre, 0);
+        for(int i = 0; i < prerequisites.length; i++){
+            int from = prerequisites[i][1], to = prerequisites[i][0];
+            pre[to]++;
+            next.get(from).add(to);
+        }
+        List<Integer> res = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();
+        for(int i = 0 ;i < numCourses ; i++) {
+            if (pre[i] == 0) {
+                queue.offer(i);
+                res.add(i);
+            }
+        }
+        while(!queue.isEmpty()){
+            int node = queue.poll();
+            for(int i:next.get(node)){
+                pre[i]--;
+                if(pre[i] == 0){
+                    queue.offer(i);
+                    res.add(i);
+                }
+            }
+        }
+        if(res.size() < numCourses) return new int[0];
+        int[] ress = new int[res.size()];
+        for(int i = 0; i < ress.length; i++)
+            ress[i] = res.get(i);
+
+        return ress;
+    }
+}
+
 public class Solution {
 
     static class Vertex {

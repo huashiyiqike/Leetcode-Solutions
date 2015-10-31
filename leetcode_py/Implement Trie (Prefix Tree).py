@@ -1,9 +1,12 @@
 from collections import defaultdict
+
+
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
         self.nexts = defaultdict(TrieNode)
         self.end = False
+
 
 class Trie:
     def __init__(self):
@@ -43,6 +46,7 @@ class Trie:
                 return False
         return True
 
+
 # Your Trie object will be instantiated and called as such:
 # trie = Trie()
 # trie.insert("somestring")
@@ -51,11 +55,11 @@ class Trie:
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
-        self.end=False
-        self.child=defaultdict(TrieNode)
+        self.end = False
+        self.child = defaultdict(TrieNode)
+
 
 class Trie:
-
     def __init__(self):
         self.root = TrieNode()
 
@@ -63,18 +67,18 @@ class Trie:
     # @return {void}
     # Inserts a word into the trie.
     def insert(self, word):
-        current=self.root 
+        current = self.root
         for i in word:
-            current=current.child[i]
-        current.end=True
+            current = current.child[i]
+        current.end = True
 
     # @param {string} word
     # @return {boolean}
     # Returns if the word is in the trie.
     def search(self, word):
-        current=self.root 
+        current = self.root
         for i in word:
-            current=current.child.get(i)
+            current = current.child.get(i)
             if current is None:
                 return False
         return current.end
@@ -84,16 +88,16 @@ class Trie:
     # Returns if there is any word in the trie
     # that starts with the given prefix.
     def startsWith(self, prefix):
-        current=self.root 
+        current = self.root
         for i in prefix:
-            current=current.child.get(i)
+            current = current.child.get(i)
             if current is None:
                 return False
         return True
 
 
-if __name__=="__main__":
-    a=Trie()
+if __name__ == "__main__":
+    a = Trie()
     a.insert("app")
     a.insert("apple")
     a.insert("beer")
@@ -107,5 +111,5 @@ if __name__=="__main__":
     a.insert("something")
     print  a.search("something1")
     print  a.startsWith("something")
-    #a.insert("som")
-    print a.startsWith("som") 
+    # a.insert("som")
+    print a.startsWith("som")

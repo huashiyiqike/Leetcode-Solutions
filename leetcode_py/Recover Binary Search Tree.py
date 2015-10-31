@@ -6,34 +6,31 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    def inorderTravel(self,root,last):
-        if root is None:
-            return None,None
+    def inorderTravel(self, root, last):
         if root.left:
-            last=self.inorderTravel(root.left,  last)
-        if last.val>root.val:
+            last = self.inorderTravel(root.left, last)
+        if last and last.val > root.val:
             if self.first is None:
-                self.first=last
-                self.second=root
-            else:
-                self.second=root
-        last=root
+                self.first = last
+            self.second = root
+        last = root
         if root.right:
-            last=self.inorderTravel(root.right, last)
+            last = self.inorderTravel(root.right, last)
         return last
 
-    def recoverTree(self,root):
-        self.first,self.second=None,None
-        dummy=TreeNode(-1<<64) # or set as None
-        self.inorderTravel(root,dummy)
-        self.first.val,self.second.val=self.second.val,self.first.val
+    def recoverTree(self, root):
+        if root is None:
+            return
+        self.first, self.second = None, None
+        self.inorderTravel(root, None)
+        self.first.val, self.second.val = self.second.val, self.first.val
 
 
-if __name__=="__main__":
-    a=Solution()
-    m=TreeNode(0)
-    n=TreeNode(1)
-    m.left=n
+if __name__ == "__main__":
+    a = Solution()
+    m = TreeNode(0)
+    n = TreeNode(1)
+    m.left = n
     a.recoverTree(m)
     print m.val
     print n.val

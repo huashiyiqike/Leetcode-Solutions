@@ -1,3 +1,39 @@
+import java.lang.Object;
+import java.lang.Override;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<ListNode> queue = new PriorityQueue<ListNode>(new Comparator<ListNode>() {
+            @Override
+            public int compare(ListNode o1, ListNode o2) {
+                return o1.val - o2.val;
+            }
+        });
+        for(int i = 0; i < lists.length; i++){
+            if(lists[i]!=null)  queue.offer(lists[i]);
+        }
+        ListNode dummy = new ListNode(0), res = dummy;
+        while(!queue.isEmpty()){
+            ListNode tmp = queue.poll();
+            if(tmp.next != null){
+                queue.offer(tmp.next);
+            }
+            res.next = tmp;
+            res = res.next;
+        }
+        return dummy.next;
+    }
+}
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -22,15 +58,11 @@ public class Solution {
             }
             cur = cur.next;
         }
-        while(A != null){
+        if(A != null){
             cur.next = A;
-            A = A.next;
-            cur = cur.next;
         }
-        while(B != null){
+        else{
             cur.next = B;
-            B = B.next;
-            cur = cur.next;
         }
         return dummy.next;
     }

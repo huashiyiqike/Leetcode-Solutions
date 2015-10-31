@@ -20,11 +20,11 @@ public class Solution{
         dummy.next = head;
         ListNode result = new ListNode(0);
         while(dummy.next != null){
-            ListNode tmp = dummy.next.next;
             ListNode res = result;
             while(res.next != null && res.next.val < dummy.next.val){
                 res = res.next;
             }
+            ListNode tmp = dummy.next.next;
             dummy.next.next = res.next;
             res.next = dummy.next;
             dummy.next = tmp;

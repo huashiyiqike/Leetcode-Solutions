@@ -28,34 +28,34 @@ class Solution:
     # @param two ListNodes
     # @return the intersected ListNode
     def getIntersectionNode(self, headA, headB):
-        if headA==None or headB==None:
+        if headA == None or headB == None:
             return None
-            
-        tmpA=headA
-        tmpB=headB
-        countA=0
-        countB=0
-        
-        while tmpA.next!=None:
-            countA+=1
-            tmpA=tmpA.next
-        while tmpB.next!=None:
-            countB+=1
-            tmpB=tmpB.next
-            
-        if tmpA!=tmpB:
+
+        tmpA = headA
+        tmpB = headB
+        countA = 0
+        countB = 0
+
+        while tmpA.next != None:
+            countA += 1
+            tmpA = tmpA.next
+        while tmpB.next != None:
+            countB += 1
+            tmpB = tmpB.next
+
+        if tmpA != tmpB:
             return None
-            
-        tmpA=headA
-        tmpB=headB
-        if countA>countB:
-            for i in range(countA-countB):
-                tmpA=tmpA.next
-        elif countB>countA:
-            for i in range(countB-countA):
-                tmpB=tmpB.next
-                
-        while tmpA!=tmpB:
-            tmpA=tmpA.next
-            tmpB=tmpB.next
+
+        tmpA = headA
+        tmpB = headB
+        if countA > countB:
+            for i in range(countA - countB):
+                tmpA = tmpA.next
+        elif countB > countA:
+            for i in range(countB - countA):
+                tmpB = tmpB.next
+
+        while tmpA != tmpB:
+            tmpA = tmpA.next
+            tmpB = tmpB.next
         return tmpA

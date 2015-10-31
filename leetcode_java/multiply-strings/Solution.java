@@ -22,7 +22,7 @@ public class Solution {
         }
         int start = 0;
         while(start+1 < res.length && res[start] == 0){start++;}
-        return new String(Arrays.copyOfRange(reschar, start, reschar.length);
+        return new String(Arrays.copyOfRange(reschar, start, reschar.length));
 //        StringBuilder sb = new StringBuilder();
 //        for (int num : products) sb.append(num);
 //        while (sb.length() != 0 && sb.charAt(0) == '0') sb.deleteCharAt(0);

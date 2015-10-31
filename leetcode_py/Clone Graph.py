@@ -1,7 +1,6 @@
 # Definition for a undirected graph node
 import new
 
-
 class UndirectedGraphNode:
     def __init__(self, x):
         self.label = x
@@ -45,7 +44,6 @@ class Solution:
 
             current = next
         return start
-
 
 # recursive breadth first
 class Solution:
