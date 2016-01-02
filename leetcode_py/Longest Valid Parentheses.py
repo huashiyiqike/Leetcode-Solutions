@@ -15,11 +15,11 @@ class Solution:
             if item == '(':
                 stack.append(idx)
             else:
-                if len(stack) == 0:
+                if not stack:
                     left = idx + 1
                 else:
                     stack.pop()
-                    if len(stack) == 0:
+                    if not stack:
                         maxlen = max(maxlen, idx - left + 1)
                     else:
                         maxlen = max(maxlen, idx - stack[-1])

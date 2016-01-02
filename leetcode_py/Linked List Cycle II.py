@@ -8,49 +8,43 @@ class Solution:
     # @param head, a ListNode
     # @return a list node
     def detectCycle(self, head):
-
-
-class Solution:
-    # @param head, a ListNode
-    # @return a list node
-    def detectCycle(self, head):
         if head is None or head.next is None:
             return None
-        if head.next==head:
+        if head.next == head:
             return head
-        if head.next.next==head:
+        if head.next.next == head:
             return head
-        if head.next.next==None:
+        if not head.next.next:
             return None
-            
-        pre=head.next.next
-        last=head
-        First=True
-        count=0
+
+        pre = head.next.next
+        last = head
+        First = True
+        count = 0
         while pre.next is not None and pre.next.next is not None:
-            pre=pre.next.next
-            last=last.next
-            if First ==False:
-                count+=1
-            if pre==last:
-                if First==True:
-                    First=False
+            pre = pre.next.next
+            last = last.next
+            if First == False:
+                count += 1
+            if pre == last:
+                if First == True:
+                    First = False
                 else:
                     break
-        if count!=0:
-            pre=head
-            last=head
+        if count != 0:
+            pre = head
+            last = head
             for i in range(count):
-                pre=pre.next
-            while pre!=last:
-                pre=pre.next
-                last=last.next
+                pre = pre.next
+            while pre != last:
+                pre = pre.next
+                last = last.next
             return last
         else:
             return None
 
 
-#    https://leetcode.com/discuss/18393/share-complexity-constant-space-code-original-list-comments
+# https://leetcode.com/discuss/18393/share-complexity-constant-space-code-original-list-comments
 class Solution:
     def detectCycle(self, head):
         fast, slow = head, head

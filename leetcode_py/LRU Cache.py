@@ -1,3 +1,6 @@
+import collections
+
+
 class LRUCache:
     def __init__(self, capacity):
         self.cache = collections.OrderedDict()
@@ -20,6 +23,7 @@ class LRUCache:
 
 
 from collections import defaultdict
+
 
 class LinkedList:
     def __init__(self):

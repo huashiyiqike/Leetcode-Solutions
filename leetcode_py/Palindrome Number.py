@@ -1,4 +1,4 @@
-#might overflow
+# might overflow
 # class Solution:
 #     # @return a boolean
 #     def isPalindrome(self, x):
@@ -35,26 +35,27 @@ class Solution:
 class Solution:
     # @return a boolean
     def isPalindrome(self, x):
-        if x<0:
+        if x < 0:
             return False
-        tmp=x
-        count=-1
+        tmp = x
+        count = -1
         while tmp:
-            count+=1
-            tmp/=10
+            count += 1
+            tmp /= 10
 
-        for i in range((count+1)/2):
-            if x/10**count!=x%10:
+        for i in range((count + 1) / 2):
+            if x / 10 ** count != x % 10:
                 return False
-            x/=10
-            count-=1
-            x-=(x/10**count)*10**count
-            count-=1
+            x /= 10
+            count -= 1
+            x -= (x / 10 ** count) * 10 ** count
+            count -= 1
 
         return True
 
-if __name__=="__main__":
-    a=Solution()
+
+if __name__ == "__main__":
+    a = Solution()
     print a.isPalindrome(1000021)
     print a.isPalindrome(0)
     print a.isPalindrome(121)
@@ -63,6 +64,3 @@ if __name__=="__main__":
     print a.isPalindrome(222)
     print a.isPalindrome(2147483648)
     print a.isPalindrome(-2147483648)
-    
-
-

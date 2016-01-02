@@ -25,6 +25,8 @@ class Solution:
 
 
 from copy import deepcopy
+
+
 class Solution:
     def f(self, m2, row):
         stack = []

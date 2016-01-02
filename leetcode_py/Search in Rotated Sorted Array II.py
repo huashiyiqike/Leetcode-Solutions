@@ -3,12 +3,12 @@ class Solution:
     # @param {integer} target
     # @return {boolean}
     def search(self, nums, target):
-        l, r = 0, len(nums)-1
+        l, r = 0, len(nums) - 1
         while l <= r:
-            mid = (l+r)/2
+            mid = (l + r) / 2
             if target == nums[mid]:
                 return True
-            if nums[mid] <= nums[r]: # notice =
+            if nums[mid] <= nums[r]:  # notice =
                 if nums[mid] < target <= nums[r]:
                     l = mid + 1
                 else:
@@ -20,34 +20,37 @@ class Solution:
                     l += 1
         return False
 
+
 class Solution:
     # @param A, a list of integers
     # @param target, an integer to be searched
     # @return an integer
     def search(self, A, target):
-        if len(A)==0 or (len(A)==1 and A[0]!=target):
+        if len(A) == 0 or (len(A) == 1 and A[0] != target):
             return False
-        low,high=0,len(A)-1
-        while low+1<len(A)-1 and A[low]==A[low+1]:
-            low+=1
-        while high>0 and A[high]==A[high-1]:
-            high-=1
-        while low<high and A[low]==A[high]:
-            low+=1
-            
-        while low<high:
-            mid=(high+low)>>1
-            if  (A[low] <= A[mid] and target < A[mid] and target >= A[low]) or \
-            (A[mid] <= A[high] and (target < A[mid] or target > A[high])):
-                high=mid-1
+        low, high = 0, len(A) - 1
+        while low + 1 < len(A) - 1 and A[low] == A[low + 1]:
+            low += 1
+        while high > 0 and A[high] == A[high - 1]:
+            high -= 1
+        while low < high and A[low] == A[high]:
+            low += 1
+
+        while low < high:
+            mid = (high + low) >> 1
+            if (A[low] <= A[mid] and target < A[mid] and target >= A[low]) or \
+                    (A[mid] <= A[high] and (target < A[mid] or target > A[high])):
+                high = mid - 1
             elif A[mid] == target:
                 return True
             else:
-                low+=1
-        if A[low]==target:
+                low += 1
+        if A[low] == target:
             return True
         return False
-#     
+
+
+#
 #    https://leetcode.com/discuss/223/when-there-are-duplicates-the-worst-case-is-could-we-do-better
 #     bool search(int A[], int n, int key) {
 #     int l = 0, r = n - 1;
@@ -74,51 +77,52 @@ class Solution:
     # @param target, an integer to be searched
     # @return an integer
     def search(self, A, target):
-        if len(A)==0:
+        if len(A) == 0:
             return -1
-        l,r=0,len(A)-1
-        while l<=r:
-            mid=(l+r)/2
-            if target==A[mid]:
+        l, r = 0, len(A) - 1
+        while l <= r:
+            mid = (l + r) / 2
+            if target == A[mid]:
                 return True
-            if A[mid]<A[r]:
-                if A[mid]<target<=A[r]:
-                    l=mid+1
+            if A[mid] < A[r]:
+                if A[mid] < target <= A[r]:
+                    l = mid + 1
                 else:
-                    r=mid-1
-            elif A[mid]>A[r]:
-                if A[l]<=target<A[mid]:
-                    r=mid-1
+                    r = mid - 1
+            elif A[mid] > A[r]:
+                if A[l] <= target < A[mid]:
+                    r = mid - 1
                 else:
-                    l=mid+1
+                    l = mid + 1
             else:
-                r-=1 # cannot use l+=1
+                r -= 1  # cannot use l+=1
         return False
+
 
 class Solution:
     # @param A, a list of integers
     # @param target, an integer to be searched
     # @return an integer
     def search(self, A, target):
-        if len(A)==0 or (len(A)==1 and A[0]!=target):
+        if len(A) == 0 or (len(A) == 1 and A[0] != target):
             return False
-        low,high=0,len(A)-1
-        while low+1<len(A)-1 and A[low]==A[low+1]:
-            low+=1
-        while high>0 and A[high]==A[high-1]:
-            high-=1
-        while low<high and A[low]==A[high]:
-            low+=1
+        low, high = 0, len(A) - 1
+        while low + 1 < len(A) - 1 and A[low] == A[low + 1]:
+            low += 1
+        while high > 0 and A[high] == A[high - 1]:
+            high -= 1
+        while low < high and A[low] == A[high]:
+            low += 1
 
-        while low<high:
-            mid=(high+low)>>1
-            if  (A[low] <= A[mid] and target < A[mid] and target >= A[low]) or \
+        while low < high:
+            mid = (high + low) >> 1
+            if (A[low] <= A[mid] and target < A[mid] and target >= A[low]) or \
                     (A[mid] <= A[high] and (target < A[mid] or target > A[high])):
-                high=mid-1
+                high = mid - 1
             elif A[mid] == target:
                 return True
             else:
-                low+=1
-        if A[low]==target:
+                low += 1
+        if A[low] == target:
             return True
         return False

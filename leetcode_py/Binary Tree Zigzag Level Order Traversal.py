@@ -11,26 +11,26 @@ class Solution:
     def zigzagLevelOrder(self, root):
         if root is None:
             return []
-        queue=[root]
-        res=[]
-        reverse=False
+        queue = [root]
+        res = []
+        reverse = False
         while queue:
-            count=len(queue)
-            tmp=[]
-            next=[]
+            count = len(queue)
+            tmp = []
+            next = []
             for i in range(count):
-                    if queue[i].left:
-                        next.append(queue[i].left)
-                    if queue[i].right:
-                        next.append(queue[i].right)
-                    tmp.append(queue[i].val)
+                if queue[i].left:
+                    next.append(queue[i].left)
+                if queue[i].right:
+                    next.append(queue[i].right)
+                tmp.append(queue[i].val)
 
             if not reverse:
                 res.append(tmp)
-                reverse=True
+                reverse = True
             else:
                 res.append(tmp[::-1])
-                reverse=False
-            queue=next
-            
+                reverse = False
+            queue = next
+
         return res

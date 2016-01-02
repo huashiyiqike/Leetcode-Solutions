@@ -1,3 +1,5 @@
+
+# two pointer
 class Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
@@ -19,44 +21,12 @@ class Solution:
                 else:
                     res.append([nums[idx], nums[left], nums[right]])
                     left += 1
+                    # ensure no duplicate
                     while left < len(nums) and nums[left] == nums[left - 1]:
                         left += 1
         return res
 
-
-class Solution:
-    # @param {integer[]} nums
-    # @return {integer[][]}
-    def threeSum(self, nums):
-        nums = sorted(nums)
-        res = []
-        for i in range(len(nums) - 2):
-            if i > 0 and nums[i - 1] == nums[i]:
-                continue
-            left = i + 1
-            right = len(nums) - 1
-            while left < right:
-                if nums[left] + nums[right] < -nums[i]:
-                    left += 1
-                elif nums[left] + nums[right] > -nums[i]:
-                    right -= 1
-                else:
-                    res.append([nums[i], nums[left], nums[right]])
-                    left += 1
-                    while left + 1 < len(nums) and nums[left] == nums[left - 1]:
-                        left += 1
-                        # if (left == i+1 or nums[left] != nums[left-1]) and \
-                        #         (right == len(nums)-1 or nums[right] != nums[right+1]):
-                        #     res.append([nums[i], nums[left], nums[right]])
-                        #     left += 1
-                        #     right -= 1
-                        # elif left > i+1 and nums[left] == nums[left-1]:
-                        #     left += 1
-                        # elif right < len(nums)-1 and nums[right] == nums[right+1]:
-                        #     right -= 1
-        return res
-
-
+# like 2sum
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
     def find(self, lists, aim, out, resultlist):

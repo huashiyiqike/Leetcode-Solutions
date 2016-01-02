@@ -7,6 +7,7 @@ class Solution:
         t = sorted(t)
         return s == t
 
+
 class Solution:
     # @param {string} s
     # @param {string} t

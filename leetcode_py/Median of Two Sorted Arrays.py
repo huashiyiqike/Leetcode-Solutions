@@ -3,6 +3,42 @@ class Solution:
     def findMedianSortedArrays(self, A, B):
         if len(A) > len(B):
             A, B = B, A
+        if (len(A) + len(B)) % 2 == 0:
+            return (self.findkth(A, len(A), B, len(B), (len(A) + len(B)) / 2) + \
+                    self.findkth(A, len(A), B, len(B), (len(A) + len(B)) / 2 + 1)) / 2.0
+        else:
+            return self.findkth(A, len(A), B, len(B), (len(A) + len(B)) / 2 + 1)
+
+    def findkth(self, A, m, B, n, k):
+        if m <= 0:
+            return B[k - 1]
+        elif n <= 0:
+            return A[k - 1]
+        elif k <= 1:
+            return min(A[0], B[0])
+        qa = min(m, k / 2)
+        qb = k - qa
+        if A[qa - 1] < B[qb - 1]:
+            return self.findkth(A[qa:], m - qa, B, n, k - qa)
+        elif A[qa - 1] > B[qb - 1]:
+            return self.findkth(A, m, B[qb:], n - qb, k - qb)
+        else:
+            return A[qa - 1]
+
+
+if __name__ == '__main__':
+    a = Solution()
+    A = [4, 5, 6]
+    B = [1, 2, 3, 4, 5]
+
+    print a.findMedianSortedArrays(A, B)
+
+
+class Solution:
+    # @return a float
+    def findMedianSortedArrays(self, A, B):
+        if len(A) > len(B):
+            A, B = B, A
         if len(A) == 0:
             if len(B) == 0:
                 return 0.0

@@ -3,7 +3,11 @@ class Point:
     def __init__(self, a=0, b=0):
         self.x = a
         self.y = b
+
+
 from collections import defaultdict
+
+
 class Solution:
     # @param {Point[]} points
     # @return {integer}
@@ -12,33 +16,34 @@ class Solution:
             return 0
 
         res = 1
-        for i in range(len(points)-1):
+        for i in range(len(points) - 1):
             vertical = 1
             same = 0
             dict = defaultdict(int)
-            for j in range(i+1, len(points)):
+            for j in range(i + 1, len(points)):
                 if points[j].x == points[i].x:
                     vertical += 1
                     if points[j].y == points[i].y:
                         same += 1
                 else:
                     lope = (points[j].y - points[i].y) / float(points[j].x - points[i].x)
-                    cross = points[i].y - points[i].x*(points[j].y - points[i].y)\
-                        / float(points[j].x - points[i].x)
+                    cross = points[i].y - points[i].x * (points[j].y - points[i].y) \
+                                          / float(points[j].x - points[i].x)
                     dict[(lope, cross)] += 1
 
-            res = max(res, (vertical if vertical > 1 else 0),\
+            res = max(res, (vertical if vertical > 1 else 0), \
                       same + 1 + (max(dict.values()) if dict.values() else 0))
 
         return res
 
-if __name__=="__main__":
-    a=Solution()
+
+if __name__ == "__main__":
+    a = Solution()
     #  print a.maxPoints([Point(0,0),Point(1,0)])
-    print a.maxPoints([Point(0,0),Point(1,1),Point(0,0)])
-    print a.maxPoints([Point(0,0),Point(0,0)])
-    print a.maxPoints([Point(1,1),Point(2,2), Point(1,0), Point(2,1)])
-    print a.maxPoints([Point(-1, -1), Point(0,0), Point(2,2)])
+    print a.maxPoints([Point(0, 0), Point(1, 1), Point(0, 0)])
+    print a.maxPoints([Point(0, 0), Point(0, 0)])
+    print a.maxPoints([Point(1, 1), Point(2, 2), Point(1, 0), Point(2, 1)])
+    print a.maxPoints([Point(-1, -1), Point(0, 0), Point(2, 2)])
 
 # Definition for a point.
 class Point:
@@ -46,29 +51,30 @@ class Point:
         self.x = a
         self.y = b
 
+
 class Solution():
     def maxPoints(self, points):
-        res=0
+        res = 0
         for i in range(len(points)):
-            tmpres,dicts,same,inf=0,{},1,0
-            for j in range(i+1,len(points)):
-                if points[i].x==points[j].x and points[i].y==points[j].y:
-                    same+=1
-                elif points[i].x==points[j].x:
-                    inf+=1
+            tmpres, dicts, same, inf = 0, {}, 1, 0
+            for j in range(i + 1, len(points)):
+                if points[i].x == points[j].x and points[i].y == points[j].y:
+                    same += 1
+                elif points[i].x == points[j].x:
+                    inf += 1
                 else:
-                    slop=1.0*(points[j].y-points[i].y)/(points[j].x-points[i].x)
+                    slop = 1.0 * (points[j].y - points[i].y) / (points[j].x - points[i].x)
                     if slop not in dicts:
-                        dicts[slop]=1
+                        dicts[slop] = 1
                     else:
-                        dicts[slop]+=1
+                        dicts[slop] += 1
                 for slop in dicts:
-                    tmpres=max(tmpres,same+dicts[slop]) 
-            res=max(res,tmpres,same+inf)
-        return res            
-            
+                    tmpres = max(tmpres, same + dicts[slop])
+            res = max(res, tmpres, same + inf)
+        return res
 
-# 
+        #
+
 # class Solution:
 #     # @param {Point[]} points
 #     # @return {integer}
@@ -99,11 +105,11 @@ class Solution():
 #                 res=max(res,tmpres)
 #                 
 #         return res
-    
 
-if __name__=="__main__":
-    a=Solution()
-  #  print a.maxPoints([Point(0,0),Point(1,0)])
-    print a.maxPoints([Point(0,0),Point(1,1),Point(0,0)])
-    print a.maxPoints([Point(0,0),Point(0,0)])
-    print a.maxPoints([Point(1,1),Point(2,2), Point(1,0), Point(2,1)])
+
+if __name__ == "__main__":
+    a = Solution()
+    #  print a.maxPoints([Point(0,0),Point(1,0)])
+    print a.maxPoints([Point(0, 0), Point(1, 1), Point(0, 0)])
+    print a.maxPoints([Point(0, 0), Point(0, 0)])
+    print a.maxPoints([Point(1, 1), Point(2, 2), Point(1, 0), Point(2, 1)])

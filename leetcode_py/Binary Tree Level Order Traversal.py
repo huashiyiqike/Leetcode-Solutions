@@ -1,14 +1,13 @@
-
 class Solution:
     # @param root, a tree node
     # @return a list of lists of integers
     def levelOrder(self, root):
         if root is None:
             return []
-        current,res=[root],[]
+        current, res = [root], []
         while current:
-            next=[]
-            tmpres=[]
+            next = []
+            tmpres = []
             for i in current:
                 if i.left:
                     next.append(i.left)
@@ -16,22 +15,21 @@ class Solution:
                     next.append(i.right)
                 tmpres.append(i.val)
             res.append(tmpres)
-            current=next
+            current = next
         return res
-
 
 
 class Solution:
     # @param root, a tree node
     # @return a list of lists of integers
     def levelOrder(self, root):
-        if root==None:
+        if root == None:
             return []
-        queue=[root]
-        res=[]
+        queue = [root]
+        res = []
         while queue:
-            count=len(queue)
-            tmp=[]
+            count = len(queue)
+            tmp = []
             for i in range(count):
                 if queue[0].left:
                     queue.append(queue[0].left)

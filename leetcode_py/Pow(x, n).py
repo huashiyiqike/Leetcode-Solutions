@@ -6,11 +6,10 @@ class Solution:
         res = 1
         m = abs(n)
         while m:
-            if m&1:
+            if m & 1:
                 res *= x
             m >>= 1
             x *= x
         if n < 0:
-            res = 1/res
+            res = 1 / res
         return res
-

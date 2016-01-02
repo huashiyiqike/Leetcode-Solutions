@@ -14,16 +14,17 @@ class Solution:
     # @param a ListNode
     # @return a ListNode
     def swapPairs(self, head):
-        p=head
+        p = head
         while head:
             if head.next:
-                tmp=head.next.val
-                head.next.val=head.val
-                head.val=tmp
-                head=head.next.next
+                tmp = head.next.val
+                head.next.val = head.val
+                head.val = tmp
+                head = head.next.next
             else:
                 return p
         return p
+
 
 class Solution:
     # @param a ListNode
@@ -48,17 +49,17 @@ class Solution:
     def swapPairs(self, head):
         if head is None or head.next is None:
             return head
-        dummy=ListNode(0)
-        dummy.next=head 
-        pre=dummy 
-        p=head 
+        dummy = ListNode(0)
+        dummy.next = head
+        pre = dummy
+        p = head
         while p and p.next:
-            pre.next=p.next 
-            p.next=p.next.next 
-            pre.next.next=p  
-            
-            pre=p
-            p=p.next
+            pre.next = p.next
+            p.next = p.next.next
+            pre.next.next = p
+
+            pre = p
+            p = p.next
         return dummy.next
 
 
@@ -82,36 +83,29 @@ class Solution:
             cur = cur.next.next
         return dummy.next
 
+
 class Solution:
     # @param a ListNode
     # @return a ListNode
     def swapPairs(self, head):
-        if head == None or head.next ==None :
+        if head == None or head.next == None:
             return head
-        pre=head
-        p=head.next
-        head=p
+        pre = head
+        p = head.next
+        head = p
         while p:
-            tmp=p.next
-            p.next=pre   
+            tmp = p.next
+            p.next = pre
             if tmp:
                 if tmp.next:
-                    pre.next=tmp.next
+                    pre.next = tmp.next
                 else:
-                    pre.next=tmp 
+                    pre.next = tmp
                     return head
-                pre=tmp
-                p=tmp.next
+                pre = tmp
+                p = tmp.next
             else:
-                pre.next=None
-                return head 
-             
+                pre.next = None
+                return head
+
         return head
-            
-        
-  
-            
-
-
-
-            

@@ -18,7 +18,7 @@ class Solution:
             else:
                 res += left - height[i]
 
-        for i in range(len(height)-1, maxs_idx, -1):
+        for i in range(len(height) - 1, maxs_idx, -1):
             if height[i] > right:
                 right = height[i]
             else:
@@ -81,7 +81,7 @@ class Solution:
 #                 leftidx=idx
 #         return res
 
-if __name__=="__main__":
-    a=Solution()
-    print a.trap( [3,1,1,1,1,1,3])  
-    print a.trap( [0,1,0,2,1,0,1,3,2,1,2,1])                   
+if __name__ == "__main__":
+    a = Solution()
+    print a.trap([3, 1, 1, 1, 1, 1, 3])
+    print a.trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])

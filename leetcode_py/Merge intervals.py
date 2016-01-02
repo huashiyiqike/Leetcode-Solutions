@@ -29,10 +29,10 @@ class Solution:
         res = []
         while idx < len(intervals):
             cur = intervals[idx]
-            while idx+1 < len(intervals):
-                if intervals[idx+1].start <= cur.end:
-                    if intervals[idx+1].end > cur.end:
-                        cur.end = intervals[idx+1].end
+            while idx + 1 < len(intervals):
+                if intervals[idx + 1].start <= cur.end:
+                    if intervals[idx + 1].end > cur.end:
+                        cur.end = intervals[idx + 1].end
                     idx += 1
                 else:
                     break

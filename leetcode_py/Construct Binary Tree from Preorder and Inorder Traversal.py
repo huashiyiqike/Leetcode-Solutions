@@ -5,48 +5,50 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 class Solution:
     def buildTree(self, preorder, inorder):
-        if len(preorder)==0:
+        if len(preorder) == 0:
             return None
-        return self.buildTree_help(preorder, inorder, 0,len(inorder)-1, 0,len(inorder)-1)
+        return self.buildTree_help(preorder, inorder, 0, len(inorder) - 1, 0, len(inorder) - 1)
 
     # @param preorder, a list of integers
     # @param inorder, a list of integers
     # @return a tree node
-    def buildTree_help(self, preorder, inorder,i,j,k,l):
-        if i>j:
+    def buildTree_help(self, preorder, inorder, i, j, k, l):
+        if i > j:
             return None
         # for idx in range(k,l+1):
         #     if inorder[idx]==preorder[i]:
         #         root_idx=idx
-        root_idx=inorder.index(preorder[i])
+        root_idx = inorder.index(preorder[i])
 
-        root=TreeNode(inorder[root_idx])
-        root.left=self.buildTree_help(preorder, inorder,   i+1,         i+root_idx-k,      k,    root_idx-1)
-        root.right=self.buildTree_help(preorder,inorder,  j-l+root_idx+1,    j,      root_idx+1,         l)
+        root = TreeNode(inorder[root_idx])
+        root.left = self.buildTree_help(preorder, inorder, i + 1, i + root_idx - k, k, root_idx - 1)
+        root.right = self.buildTree_help(preorder, inorder, j - l + root_idx + 1, j, root_idx + 1, l)
         return root
 
-if __name__=="__main__":
-    a=Solution()
-    print a.buildTree([2,3], [2,3])
 
-#  MLE
+if __name__ == "__main__":
+    a = Solution()
+    print a.buildTree([2, 3], [2, 3])
+
+# MLE
 class Solution:
     # @param preorder, a list of integers
     # @param inorder, a list of integers
     # @return a tree node
     def buildTree(self, preorder, inorder):
-        if len(preorder)==0:
+        if len(preorder) == 0:
             return None
 
-        for idx,item in enumerate(inorder):
-            if item==preorder[0]:
-                root_idx=idx
+        for idx, item in enumerate(inorder):
+            if item == preorder[0]:
+                root_idx = idx
                 break
-        root=TreeNode(inorder[root_idx])
-        root.left=self.buildTree(preorder[1:root_idx+1],inorder[:root_idx])
-        root.right=self.buildTree(preorder[root_idx+1:],inorder[root_idx+1:])
+        root = TreeNode(inorder[root_idx])
+        root.left = self.buildTree(preorder[1:root_idx + 1], inorder[:root_idx])
+        root.right = self.buildTree(preorder[root_idx + 1:], inorder[root_idx + 1:])
         return root
 
 # https://leetcode.com/discuss/28271/my-o-n-19ms-solution-without-recusion-hope-help-you

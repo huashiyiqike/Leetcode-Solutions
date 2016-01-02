@@ -1,3 +1,18 @@
+# https://leetcode.com/discuss/65240/python-simple-solution
+class Solution(object):
+    def maxSlidingWindow(self, nums, k):
+        ans = []
+        queue = []
+        for i, v in enumerate(nums):
+            if queue and queue[0] <= i - k:
+                queue = queue[1:]
+            while queue and nums[queue[-1]] < v:
+                queue.pop()
+            queue.append(i)
+            if i + 1 >= k:
+                ans.append(nums[queue[0]])
+        return ans
+
 class maxqueue(object):
     def __init__(self):
         self.queue = []
@@ -78,18 +93,3 @@ class Solution(object):
 if __name__ == "__main__":
     a = Solution()
     print a.maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3)
-
-# https://leetcode.com/discuss/65240/python-simple-solution
-class Solution(object):
-    def maxSlidingWindow(self, nums, k):
-        ans = []
-        queue = []
-        for i, v in enumerate(nums):
-            if queue and queue[0] <= i - k:
-                queue = queue[1:]
-            while queue and nums[queue[-1]] < v:
-                queue.pop()
-            queue.append(i)
-            if i + 1 >= k:
-                ans.append(nums[queue[0]])
-        return ans

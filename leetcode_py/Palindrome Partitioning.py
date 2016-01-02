@@ -18,55 +18,57 @@ class Solution:
                 return False
         return True
 
+
 class Solution:
-    def ispal(self,str):
-        return str==str[::-1]
+    def ispal(self, str):
+        return str == str[::-1]
+
     # @param s, a string
     # @return a list of lists of string
     def partition(self, s):
-        if len(s)==0:
+        if len(s) == 0:
             return [[]]
-        if len(s)==1:
+        if len(s) == 1:
             return [[s]]
-        res=[]
-        for idx in range(0,len(s)):
-            head=s[:idx+1]
+        res = []
+        for idx in range(0, len(s)):
+            head = s[:idx + 1]
             # print head
             if self.ispal(head):
-                tmpres=self.partition(s[idx+1:])
+                tmpres = self.partition(s[idx + 1:])
                 for i in tmpres:
-                    tmp=[head]
-                    tmp.extend(i)
-                    res.append(tmp)
+                    res.append([head].extend(i))
 
         return res
 
 
 class Solution:
-    def ispal(self,str):
-        return str==str[::-1]
+    def ispal(self, str):
+        return str == str[::-1]
+
     # @param s, a string
     # @return a list of lists of string
     def partition(self, s):
-        if len(s)==0:
+        if len(s) == 0:
             return []
-        if len(s)==1:
+        if len(s) == 1:
             return [[s]]
-        res=[]
-        for idx in range(0,len(s)):
-            head=s[:idx+1]
+        res = []
+        for idx in range(0, len(s)):
+            head = s[:idx + 1]
             # print head
             if self.ispal(head):
-                tmpres=self.partition(s[idx+1:])
-                if len(tmpres)>0:
+                tmpres = self.partition(s[idx + 1:])
+                if len(tmpres) > 0:
                     for i in tmpres:
-                        res.append([head]+i)
+                        res.append([head] + i)
                 else:
                     res.append([head])
 
         return res
 
-if __name__=="__main__":
-    a=Solution()
+
+if __name__ == "__main__":
+    a = Solution()
     print a.partition('abcba')
     print a.partition('aaa')

@@ -20,6 +20,7 @@ class Solution:
         else:
             return root
 
+
 class Solution:
     # @param {TreeNode} root
     # @param {TreeNode} p
@@ -37,7 +38,6 @@ class Solution:
                 return left
             else:
                 return right
-
 
 # too much redundant traversal
 # class Solution:
@@ -60,6 +60,3 @@ class Solution:
 #
 #         return root
 #
-
-
-

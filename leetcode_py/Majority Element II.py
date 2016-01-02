@@ -18,14 +18,17 @@ class Solution:
                 count1, count2 = count1 - 1, count2 - 1
         return [n for n in set([candidate1, candidate2]) if nums.count(n) > len(nums) // 3]
 
+
 from collections import defaultdict
+
+
 class Solution:
     # @param {integer[]} nums
     # @return {integer[]}
     def majorityElement(self, nums):
         dict = defaultdict(int)
         for i in nums:
-            if i in dict or len(dict)<3:
+            if i in dict or len(dict) < 3:
                 dict[i] += 1
             else:
                 for key, value in dict.items():
@@ -40,13 +43,27 @@ class Solution:
                 dict[i] += 1
         res = []
         for key, value in dict.items():
-            if value > len(nums)/3:
+            if value > len(nums) / 3:
                 res.append(key)
         return res
 
 
+# ??
+class Solution:
+    # @param {integer[]} nums
+    # @return {integer[]}
+    def majorityElement(self, nums):
+        dict = defaultdict(int)
+        for i in nums:
+            dict[i] += 1
+        res = []
+        for key, value in dict.items():
+            if value > len(nums) / 3:
+                res.append(key)
+        return res
+
 if __name__ == '__main__':
     a = Solution()
-    print a.majorityElement([-1,100,2,100,100,4,100])
-    print a.majorityElement([1,2,3])
-    print a.majorityElement([1,2,0,4,5,0,6,7,8,9,9,9,9,9,9,0,0,0,0,0])
+    print a.majorityElement([-1, 100, 2, 100, 100, 4, 100])
+    print a.majorityElement([1, 2, 3])
+    print a.majorityElement([1, 2, 0, 4, 5, 0, 6, 7, 8, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0])

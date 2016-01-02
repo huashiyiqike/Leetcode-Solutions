@@ -11,26 +11,20 @@ class Solution:
         if head is None or head.next is None:
             return head
 
-        dummy= ListNode(0)
-        dummy.next=head
-        pre=dummy
-        p=head
+        dummy = ListNode(0)
+        dummy.next = head
+        pre = dummy
+        p = head
         while p:
             if not p.next:
                 break
-            if p.next.val==p.val:
-                while p.next.val==p.val:
-                    p=p.next
+            if p.next.val == p.val:
+                while p.next.val == p.val:
+                    p = p.next
                     if not p or not p.next:
                         break
-                pre.next=p.next
+                pre.next = p.next
             else:
-                pre=p
-            p=p.next
+                pre = p
+            p = p.next
         return dummy.next
-
-
-
-
-
-

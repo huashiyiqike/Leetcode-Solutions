@@ -4,6 +4,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     # @param {ListNode} head
     # @return {ListNode}
@@ -41,50 +42,52 @@ class Solution:
         return self.head
 
 
-
 class Solution:
-    def f(self,head):
-        if head.next==None:
-            self.first=head
-            return head 
+    def f(self, head):
+        if head.next == None:
+            self.first = head
+            return head
         else:
-            tail=self.f(head.next)
-            tail.next=head
-            return head 
-        
-    # @param {ListNode} head
+            tail = self.f(head.next)
+            tail.next = head
+            return head
+
+            # @param {ListNode} head
+
     # @return {ListNode}
     def reverseList(self, head):
-        if head ==None:
+        if head == None:
             return None
-        self.first=None
-        self.f(head).next=None
+        self.first = None
+        self.f(head).next = None
         return self.first
-    
-if __name__=="__main__":
-    a=Solution()
-    p=ListNode(1)
-    q=ListNode(2)
-    p.next=q
+
+
+if __name__ == "__main__":
+    a = Solution()
+    p = ListNode(1)
+    q = ListNode(2)
+    p.next = q
     print a.reverseList(p).val
 #
 
 class Solution:
-    def f(self,head):
-        if head.next==None:
-            self.head=head
+    def f(self, head):
+        if head.next == None:
+            self.head = head
             return head
         else:
-            tmp=self.f(head.next)
-            head.next=None
-            tmp.next=head
+            tmp = self.f(head.next)
+            head.next = None
+            tmp.next = head
             return head
+
     # @param {ListNode} head
     # @return {ListNode}
     def reverseList(self, head):
-        if head==None or head.next==None:
+        if head == None or head.next == None:
             return head
-        self.head=None
+        self.head = None
         self.f(head)
         return self.head
 
@@ -93,27 +96,28 @@ class Solution:
     # @param {ListNode} head
     # @return {ListNode}
     def reverseList(self, head):
-        if head ==None:
+        if head == None:
             return None
-        pre,p=None,head
+        pre, p = None, head
         while p:
-            tmp=p.next
-            p.next=pre
-            pre=p
-            p=tmp
+            tmp = p.next
+            p.next = pre
+            pre = p
+            p = tmp
         return pre
+
 
 class Solution:
     # @param {ListNode} head
     # @return {ListNode}
     def reverseList(self, head):
-        if head ==None:
+        if head == None:
             return None
-        pre,p=head,head.next
+        pre, p = head, head.next
         while p:
-            tmp=p
-            p=p.next
-            tmp.next=pre
-            pre=tmp 
-        head.next=None
+            tmp = p
+            p = p.next
+            tmp.next = pre
+            pre = tmp
+        head.next = None
         return pre

@@ -8,9 +8,9 @@ class Solution:
             if matrix[row][col] == target:
                 return True
             elif matrix[row][col] > target:
-                row = row - 1
+                row -= 1
             else:
-                col = col + 1
+                col += 1
         return False
 
 

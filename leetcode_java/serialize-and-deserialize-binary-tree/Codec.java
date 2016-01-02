@@ -10,6 +10,7 @@ import java.util.*;
  * }
  */
 
+// only applies to binary tree
 class Codec {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
@@ -111,6 +112,7 @@ class Codec {
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
 
+// recursive
 public class Codec {
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();

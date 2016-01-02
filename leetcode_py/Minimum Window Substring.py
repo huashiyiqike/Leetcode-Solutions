@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     # @param {string} s
     # @param {string} t
@@ -9,7 +11,7 @@ class Solution:
             dict[i] += 1
         left = right = 0
         has = defaultdict(int)
-        minlen = 1<<63
+        minlen = 1 << 63
         res = ""
         count = 0
         while right < len(s):
@@ -25,11 +27,12 @@ class Solution:
                     has[s[left]] -= 1
                     if has[s[left]] < dict[s[left]]:
                         count -= 1
-                        if count == len(t)-1 and right - left < minlen:
+                        if count == len(t) - 1 and right - left < minlen:
                             res = s[left:right]
                             minlen = right - left
                 left += 1
         return res
+
 
 if __name__ == "__main__":
     a = Solution()
@@ -98,7 +101,7 @@ class Solution:
                             start += 1
 
                         if res == '' or len(res) > idx - start + 1:
-                            res = s[start:idx+1]
+                            res = s[start:idx + 1]
                         have_dic[s[start]] -= 1
                         start += 1
         return res
@@ -106,56 +109,52 @@ class Solution:
 
 class Solution:
     def minWindow(self, s, t):
-        if len(t)==0:
+        if len(t) == 0:
             return s
 
-        tmap=defaultdict(int)
-        count=len(t)
-        for idx,i in enumerate(t):
-            tmap[i]+=1
+        tmap = defaultdict(int)
+        count = len(t)
+        for idx, i in enumerate(t):
+            tmap[i] += 1
 
-        left=0
-        smap=defaultdict(int)
-        minlen=1<<64
-        res=""
+        left = 0
+        smap = defaultdict(int)
+        minlen = 1 << 64
+        res = ""
         for right in range(len(s)):
-         #   print res,smap
-            char=s[right]
+            #   print res,smap
+            char = s[right]
             if char in tmap:
-                smap[char]+=1
-                if smap[char]<=tmap[char]:
-                    count-=1
+                smap[char] += 1
+                if smap[char] <= tmap[char]:
+                    count -= 1
 
-            while left < right and count==0:
-                char=s[left]
+            while left < right and count == 0:
+                char = s[left]
                 if char in tmap:
-                    if smap[char]<=tmap[char]:
+                    if smap[char] <= tmap[char]:
                         break
                     else:
-                        smap[char]-=1
-                left+=1
+                        smap[char] -= 1
+                left += 1
 
-            if count==0 and right-left<minlen:
-                res=s[left:right+1]
-                minlen=right-left
+            if count == 0 and right - left < minlen:
+                res = s[left:right + 1]
+                minlen = right - left
 
-            while count ==0 and left<right:
-                char=s[left]
+            while count == 0 and left < right:
+                char = s[left]
                 if char in tmap:
-                    if smap[char]==tmap[char]:
-                        count+=1
-                        smap[char]-=1
-                    elif smap[char]<tmap[char]:
+                    if smap[char] == tmap[char]:
+                        count += 1
+                        smap[char] -= 1
+                    elif smap[char] < tmap[char]:
                         break
                     else:
-                        smap[char]-=1
-                left+=1
+                        smap[char] -= 1
+                left += 1
 
         return res
-
-
-
-
 
 #
 # from collections import defaultdict
@@ -252,20 +251,20 @@ class Solution:
 #
 #         return res
 
-if __name__=="__main__":
-    a=Solution()
+if __name__ == "__main__":
+    a = Solution()
     print a.minWindow("acbbaca", "aba")
     print a.minWindow("cabefgecdaecf", "cae")
     print a.minWindow("abccbc", "ac")
 
     print a.minWindow("aacaca", "cc")
     print a.minWindow("aacaca", "aaacc")
-    
-    print a.minWindow("abc", "ab")   
-    print a.minWindow("abc", "abc")  
-    print a.minWindow("abc", "ba")    
-    print a.minWindow("abc", "d")   
-    print a.minWindow("abcabc", "ac")     
+
+    print a.minWindow("abc", "ab")
+    print a.minWindow("abc", "abc")
+    print a.minWindow("abc", "ba")
+    print a.minWindow("abc", "d")
+    print a.minWindow("abcabc", "ac")
 
 
 
