@@ -37,7 +37,19 @@ class Solution:
         p = self.sortList(head)
 
         return self.merge(p, q)
-
+# see js version
+#var sortList = function(head) {
+#    if(!head || !head.next) return head;
+#    var p1 = head, p2 = p1.next;
+#    while(p2.next && p2.next.next){
+#        p1 = p1.next;
+#        p2 = p2.next.next;
+#    } 
+#    p2 = sortList(p1.next);
+#    p1.next = null;
+#    p1 = sortList(head);  
+#    return merge(p1,p2);
+#};
 
 class Solution:
     # @param head, a ListNode
