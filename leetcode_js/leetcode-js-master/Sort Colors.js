@@ -25,7 +25,8 @@ var sortColors = function(nums) {
     
     function swap(m, n, arr) {
         var temp = arr[m];
-        
+        var a = [1,2];
+        a.
         arr[m] = arr[n];
         arr[n] = temp;
     }

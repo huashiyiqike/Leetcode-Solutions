@@ -12,3 +12,6 @@ var str = " &amp;fdsaff&fdsa&";
 document.writeln(str.replace(re, "&a"));
 document.write(str.replace("&", "&a"));
 //document.write(str);
+var move = function(){
+    $(".test")
+}
