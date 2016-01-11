@@ -1,4 +1,3 @@
-
 var detectCycle = function(head) {
     var slow = head, fast = head;
     while(fast !== null && fast.next !== null){
