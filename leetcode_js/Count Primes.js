@@ -5,7 +5,7 @@
 var countPrimes = function(n) {
     var res = new Array(n);
     for(var i = 2; i < n; i++) res[i] = 1;
-    for(var i = 2; i < n; i++){
+    for(var i = 2; i < Math.floor(Math.sqrt(n))+1; i++){
         for(var j = i*2; j < n; j += i){
             res[j] = 0;
         }
