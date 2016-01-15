@@ -12,7 +12,7 @@ function ListNode(val) {
 /**
  * @param {ListNode} head
  * @return {ListNode}
- */
+ */ 
 var reverseList = function(head) {
     var res = new ListNode(0);
     res.next = head;
