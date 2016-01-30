@@ -26,7 +26,7 @@ var isNumber = function(s) {
     if(s.length === 1) return check(s[0]);
     if(s[1][0] === "+" || s[1][0] === "-") s[1] = s[1].substr(1, s[1].length);
     if(s[1].length === 0) return false;
-    return check(s[1]) && check(s[0]);
+    return checkdigit(s[1]) && check(s[0]);
 };
 document.writeln(isNumber("6e6.5"));
 document.writeln(isNumber("-1."));
