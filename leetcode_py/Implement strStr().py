@@ -4,7 +4,7 @@ class Solution:
             if a[i] != b[i]:
                 return False
         return True
-
+        
     # @param haystack, a string
     # @param needle, a string
     # @return an integer
