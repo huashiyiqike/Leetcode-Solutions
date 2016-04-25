@@ -1,3 +1,9 @@
+# Read from the file file.txt and output the tenth line to stdout.
+cat file.txt | awk '{if (NR==10) print $0}' #awk 'NR==10 {print}' file.txt
+sed -n 10p <file.txt
+awk '{if (NR==10) print $0}' <file.txt
+
+
 count=0
 while read line
    do count=$[$count+1] #let $count=$count+1
