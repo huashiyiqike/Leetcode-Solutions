@@ -1,0 +1,1 @@
+If the ith bulb has even factors(including 1), it will be off in the end. Only the perfect square numbers can make the bulb on. There are totally n bulbs and we count the perfect square numbers less than n by sqrt n.
