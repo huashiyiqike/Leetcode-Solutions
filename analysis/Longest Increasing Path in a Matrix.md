@@ -1,0 +1,1 @@
+Simply loop through the matrix, DFS and maintain two matrix: one for visited and another for memorization of current longest increasing path(we can combine this two as one of course). In each place we go four directions, if visited we used the previous value and plus 1, else we DFS and return the value. Do not forget to set these two matrix in the end of the DFS. 
