@@ -17,5 +17,3 @@ var containsNearbyAlmostDuplicate = function(nums, k, t) {
 	}
     return false;
 };
-var a = containsNearbyAlmostDuplicate([-3,3],2,4);
-document.writeln(a);
