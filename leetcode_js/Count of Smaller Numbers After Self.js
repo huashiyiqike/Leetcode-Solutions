@@ -27,7 +27,3 @@ var countSmaller = function(nums) {
     }
     return res;
 };
-
-
-var a = countSmaller([5,2,6,1]);
-document.writeln(a);
