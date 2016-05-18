@@ -15,5 +15,6 @@ So you should return 1, because there is only one bulb is on.
 </pre>
 </blockquote>
 
-If the ith bulb has even factors(including 1), it will be off in the end. Only the perfect square numbers can make the bulb on. There are totally n bulbs and we count the perfect square numbers less than n by sqrt n.
-If f is the ith factors,the ith/f also is the factorys of ith.So the ith (except t*t=ith) has odd factors so will off.Only(t*t=ith)The ith bulb will on,so we can count the number of i to ith has how many the perfect square numbers.
+  public int bulbSwitch(int n) {
+        return (int)Math.sqrt(n);
+    }
