@@ -1,12 +1,3 @@
-/**
- * @param {number[][]} buildings
- * @return {number[][]}
- */
-  /**
- * @param {number[]} nums
- * @param {number} k
- * @return {number}
- */
 var findKthLargest = function(nums, k) {
     var heap = [];
     for(var i = 0; i < nums.length; i++){
@@ -81,9 +72,3 @@ function heappop(arr){
         }
     }
 }
-
-
-console.log("test")
- 
-console.log(findKthLargest([2,1],2));
-console.log("[[2,70],[4,30],[6,41],[7,70],[10,102],[30,41],[60,91],[80,72],[90,59],[120,0]]");
