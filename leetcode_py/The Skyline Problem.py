@@ -96,14 +96,12 @@ class Solution:
                     res.append(new)
                 i += 1
                 j += 1
-        while i < len(left):
-            # new = [left[i][0], max(h1, h2)]
+        while i < len(left): 
             if not res or res[-1][1] != left[i][1]:
                 res.append(new)
             i += 1
         while j < len(right):
-            # new = [right[j][0], max(h1, h2)]
-            if not res or res[-1][1] != right[j][1]:  # new[1]:
+            if not res or res[-1][1] != right[j][1]:  
                 res.append(new)
             j += 1
         return res
@@ -141,32 +139,14 @@ class Solution:
 #                     res.append([x, height])
 #         return  res
 #
-
-#
-#
-# class Solution:
-#     def getSkyline(self, LRH):
-#         res = []
-#         i = 0
-#         liveHR = [] # queue
-#         while i < len(LRH) or liveHR:
-#             if not liveHR or LRH[i][0] <= -liveHR[0][1]:
-#                 x = LRH[i][0]
-#                 while i < n and LRH[i][0] == x:
-#                     heappush(liveHR, (-LRH[i][2], -LRH[i][1]))
-#                     i += 1
-#             else:
-#                 x = -liveHR[0][1]
-#                 while liveHR and -liveHR[0][1] <= x:
-#                     heappop(liveHR)
+ 
 
 class Solution:
     def getSkyline(self, LRH):
         skyline = []
         i, n = 0, len(LRH)
         liveHR = []
-        while i < n or liveHR:
-            # print liveHR
+        while i < n or liveHR: 
             if not liveHR or i < n and LRH[i][0] <= -liveHR[0][1]:
                 x = LRH[i][0]
                 while i < n and LRH[i][0] == x:
@@ -178,7 +158,7 @@ class Solution:
                     heappop(liveHR)
             height = len(liveHR) and -liveHR[0][0]
             if not skyline or height != skyline[-1][1]:
-                skyline += [x, height],
+                skyline += [x, height]
         return skyline
 
 
@@ -190,8 +170,4 @@ if __name__ == "__main__":
     print a.getSkyline(
         [[2, 4, 70], [3, 8, 30], [6, 100, 41], [7, 15, 70], [10, 30, 102], [15, 25, 76], [60, 80, 91], [70, 90, 72],
          [85, 120, 59]])
-
-    #
-    # if __name__ == '__main__':
-    #     a = Solution()
-    #     print a.getSkyline([ [2,9,10], [3,7,15], [5,12,12], [15, 20, 10], [19, 24, 8] ])
+ 
