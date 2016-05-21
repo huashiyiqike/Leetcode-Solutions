@@ -15,4 +15,5 @@ LeetCode
 |218|Segment Tree|[The Skyline Problem](https://leetcode.com/problems/range-sum-query-mutable/)|[js](./leetcode_js/The Skyline Problem.js) [python](./leetcode_py/The Skyline Problem.python) [java](./leetcode_java/the-skyline-problem/Solution.java)|Hard|[AC](./analysis/The Skyline Problem.md)|
 |215|Heap, Divide and Conquer|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[js](./leetcode_js/Kth Largest Element in an Array.js) [python](./leetcode_py/Kth Largest Element in an Array.python) [java](./leetcode_java/k-th-largest-element-in-an-array/Solution.java)|Medium|[AC](./analysis/Kth Largest Element in an Array.md)|
 |347|Heap, Hash Table|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[js](./leetcode_js/Top K Frequent Elements.js)|Medium|[AC](./analysis/Top K Frequent Elements.md)|
+|347|Heap, Hash Table|[House Robber III](https://leetcode.com/problems/top-k-frequent-elements/)|[js](./leetcode_js/House Robber III.js) [python](./leetcode_py/House Robber III.py)|Medium|[AC](./analysis/House Robber III.md)|
 
