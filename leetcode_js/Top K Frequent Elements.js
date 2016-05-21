@@ -4,17 +4,16 @@
  * @return {number[]}
  */
 var topKFrequent = function(nums, k) {
-    var hash = {}, heap = [], res = [];
-    for(var i = 0; i < nums.length; i++){
-        hash[nums[i]] = hash[nums[i]] !== undefined? hash[nums[i]]+1 : 1;
-        console.log(hash);
+    var hash = [], heap = [], res = [];
+    for(var i in nums){
+    	hash[nums[i]] = hash[nums[i]] !== undefined? hash[nums[i]]+1 : 1;
     }
-    for(i in hash){
-        heappush(heap, [hash[i], Number(i)]);
+    for(i = 0; i < hash.length; i++){
+    	heappush(heap, hash[i]);
     }
     for(i = 0; i < k; i++){
-        res.push(heap[0][1]);
-        heappop(heap);
+    	res.push(heap[0][1]);
+    	heappop(heap);
     }
     return res;
 };
@@ -82,7 +81,3 @@ function heappop(arr){
         }
     }
 }
-
-console.log("test")
- 
-console.log(topKFrequent( [1,1,1,2,2,3],2));
