@@ -1,15 +1,11 @@
+ 
 /**
- * @param {number[]} nums
- * @param {number} k
- * @return {number[]}
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
  */
- 
-
- function TreeNode(val) {
-      this.val = val;
-      this.left = this.right = null;
- }
- 
 
 /**
  * Encodes a tree to a single string.
@@ -56,13 +52,9 @@ var deserialize = function(data) {
     return recursive();
 };
 
+
+
 /**
  * Your functions will be called as such:
  * deserialize(serialize(root));
  */
-
-console.log("test")
-var a = new TreeNode(1);
-a.left = null;
-a.right = new   TreeNode(2);
-console.log(deserialize(serialize(a)));
