@@ -1,9 +1,4 @@
 /**
- * @param {number[]} nums
- * @param {number} k
- * @return {number[]}
- */
- /**
  * @constructor
  * Initialize your data structure here.
  */
@@ -62,20 +57,9 @@ Trie.prototype.startsWith = function(prefix) {
     }
     return true;
 };
-
 /**
  * Your Trie object will be instantiated and called as such:
  * var trie = new Trie();
  * trie.insert("somestring");
  * trie.search("key");
  */
-
-/**
- * Your functions will be called as such:
- * deserialize(serialize(root));
- */
-
-var tri = new Trie();
-tri.insert("a");
-tri.search("a");
-tri.startsWith("a")
