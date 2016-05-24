@@ -23,7 +23,7 @@ var canFinish = function(numCourses, prerequisites) {
     	var cur = stack.pop();
     	for(var i = 0; i < cur.next.length; i++){
     		if(cur.next[i].into == 1){
-    			stack.push(cur.next[i])
+    			stack.push(cur.next[i]);
     			count++;
     		}
     		cur.next[i].into--;
