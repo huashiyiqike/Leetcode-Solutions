@@ -21,9 +21,10 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 </backquote>
 
 just see this post [https://briangordon.github.io/2014/08/the-skyline-problem.html](https://briangordon.github.io/2014/08/the-skyline-problem.html).
-
 To recap, we iterate through the rectangles,put them in a heap by their heights,along with right edge, and keep record of current position. 
 If previous rectangles' right edges are in the left of the current position, we can safely pop them. Otherwise we keep them in the heap. If at the current position the height(heap largest) changes, we record them in the result.
+* * **********--
+We init this pointer of buildings start and end .And we 
 
 
-/****************/
+

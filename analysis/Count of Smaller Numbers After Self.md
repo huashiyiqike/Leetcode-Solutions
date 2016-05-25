@@ -14,3 +14,4 @@ Return the array [2, 1, 1, 0].
 </backquote>
 
 "The gist of this solution is to start from the end and keep a sorted array of numbers that have already occurred. When inserting the current number, the index at which you insert the number into the array corresponds to how many numbers are smaller to the right of it." 
+
