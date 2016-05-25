@@ -1,15 +1,3 @@
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {number[]}
- */
- /**
- * @constructor
- * Initialize your data structure here.
- */
-/**
- * @constructor
- */
 var WordDictionary = function() {
     this.root = new Node;
 };
@@ -44,8 +32,8 @@ WordDictionary.prototype.search = function(word) {
         var next = [];
         if(word[i] == '.'){
             for(var j = 0; j < cur.length; j++){
-                for(var node in cur[j].next){
-                    next.push(cur[j].next[node]);
+                for(var key in cur[j].next){
+                    next.push(cur[j].next[key]);
                 }
             } 
         }else{
@@ -60,15 +48,3 @@ WordDictionary.prototype.search = function(word) {
     }
     return cur.filter(function(val){return val.end;}).length > 0;
 };
-
-/**
- * Your WordDictionary object will be instantiated and called as such:
- * var wordDictionary = new WordDictionary();
- * wordDictionary.addWord("word");
- * wordDictionary.search("pattern");
- */
-
-var tri = new WordDictionary();
-tri.addWord("a");
-tri.search(".");
-tri.startsWith("a")
