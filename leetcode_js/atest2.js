@@ -1,74 +1,84 @@
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {number[]}
- */
- /**
- * @constructor
- * Initialize your data structure here.
- */
-/**
- * @constructor
- */
-var WordDictionary = function() {
-    this.root = new Node;
-};
-function Node(){
-    this.next = {}; 
-    this.end = false; 
-}
-/**
- * @param {string} word
- * @return {void}
- * Adds a word into the data structure.
- */
-WordDictionary.prototype.addWord = function(word) {
-    var cur = this.root;
-    for(var i = 0; i < word.length; i++){
-        if(!(word[i] in cur.next)){
-            cur.next[word[i]] = new Node; 
-        }
-        cur = cur.next[word[i]];
-    }
-    cur.end = true;
-}
-/**
- * @param {string} word
- * @return {boolean}
- * Returns if the word is in the data structure. A word could
- * contain the dot character '.' to represent any one letter.
- */
-WordDictionary.prototype.search = function(word) {
-    var cur = [this.root];
-    for(var i = 0 ; i < word.length; i++){
-        var next = [];
-        if(word[i] == '.'){
-            for(var j = 0; j < cur.length; j++){
-                for(var node in cur[j].next){
-                    next.push(cur[j].next[node]);
-                }
-            } 
+
+function NestedInteger(num) {
+    this.val = num;
+    this.isInteger = function() {
+        return this.val.length==1 && typeof(this.val[0]) == "number" ;
+    };
+
+    this.getInteger = function() {
+        return this.val[0];
+    };
+
+    this.getList = function() {
+        if(this.val.length > 1){
+            return this.val;
         }else{
-            if(cur.length == 0){return false;}
-            for(var j = 0; j < cur.length; j++){
-                if(word[i] in cur[j].next){
-                    next.push(cur[j].next[word[i]]);
-                }
-            } 
+            return null;
         }
-        cur = next;
-    }
-    return cur.filter(function(val){return val.end;}).length > 0;
+    };
+};
+ 
+/**
+ * @constructor
+ * @param {NestedInteger[]} nestedList
+ */
+var NestedIterator = function(nestedList) {
+    this.queue = nestedList; 
+    this.nexts = null;
 };
 
 /**
- * Your WordDictionary object will be instantiated and called as such:
- * var wordDictionary = new WordDictionary();
- * wordDictionary.addWord("word");
- * wordDictionary.search("pattern");
+ * @this NestedIterator
+ * @returns {boolean}
  */
+NestedIterator.prototype.hasNext = function() {
+    if(this.nexts == null){
+        var res;
+        while(this.queue.length > 0){
+            var cur = this.queue.shift();
+            if(cur.isInteger()){
+                res = cur.getInteger();
+                break;
+            }else{
+                cur = cur.getList();
+                if(!cur) break;
+                for(var i = cur.length-1; i >= 0; i--){ 
+                    this.queue.unshift(cur[i]);
+                }
+            }
+        }
+        this.nexts = res;
+    }
+       
+    return !(this.nexts == undefined); 
+};
 
-var tri = new WordDictionary();
-tri.addWord("a");
-tri.search(".");
-tri.startsWith("a")
+/**
+ * @this NestedIterator
+ * @returns {integer}
+ */
+NestedIterator.prototype.next = function() { 
+    var res = this.nexts;
+    this.nexts = null;
+    return res;
+};
+
+/**
+ * Your NestedIterator will be called like this:
+ * var i = new NestedIterator(nestedList), a = [];
+ * while (i.hasNext()) a.push(i.next());
+*/
+var a = new NestedInteger([1]), b = new NestedInteger([1]);
+var c = new NestedInteger([a,b]);
+var d = new NestedInteger([2]);
+var e = new NestedInteger([1]), f = new NestedInteger([1]);
+var g = new NestedInteger([e,f]);
+var x = new NestedInteger([c, d, g]);
+var i = new NestedIterator(x), m = [];
+while (i.hasNext())
+ m.push(i.next());
+console.log(m);
+var i = new NestedIterator([new NestedInteger([])]);
+while (i.hasNext())
+ m.push(i.next());
+console.log(m);
