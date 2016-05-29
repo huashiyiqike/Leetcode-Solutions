@@ -8,7 +8,7 @@ LeetCode
 |  --- | --- | --- | --- | --- | --- |
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|[py](./leetcode_py/Two Sum.py) [js](./leetcode_js/Two Sum.js) [java](./leetcode_java/two-sum/Solution.java)|Easy| |
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[py](./leetcode_py/Add Two Numbers.py) [js](./leetcode_js/Add Two Numbers.js) [java](./leetcode_java/add-two-numbers/Solution.java)|Medium| |
-|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[py](./leetcode_py/Longest Substring Without Repeating Characters.py) [java](./leetcode_java/longest-substring-without-repeating-characters/Solution.java)|Medium| |
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[py](./leetcode_py/Longest Substring Without Repeating Characters.py) [js](./leetcode_js/Longest Substring Without Repeating Characters.js) [java](./leetcode_java/longest-substring-without-repeating-characters/Solution.java)|Medium|[AC](./analysis/Longest Substring Without Repeating Characters.md)|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[py](./leetcode_py/Median of Two Sorted Arrays.py) [java](./leetcode_java/median-of-two-sorted-arrays/Solution.java)|Hard| |
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|[py](./leetcode_py/Longest Palindromic Substring.py) [java](./leetcode_java/longest-palindromic-substring/Solution.java)|Medium| |
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)|[py](./leetcode_py/ZigZag Conversion.py) [java](./leetcode_java/zigzag-conversion/Solution.java)|Easy| |
