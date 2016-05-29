@@ -1,14 +1,4 @@
 /**
- * @param {number[]} nums1
- * @param {number[]} nums2
- * @return {number}
- */
-/**
- * @param {string} s
- * @param {string} p
- * @return {boolean}
- */
-/**
  * @param {string} s
  * @param {string} p
  * @return {boolean}
@@ -45,12 +35,3 @@ var isMatch = function(s, p) {
     }
     return dp[dp.length - 1][dp[0].length - 1];
 };
-/**
- * Your NestedIterator will be called like this:
- * var i = new NestedIterator(nestedList), a = [];
- * while (i.hasNext()) a.push(i.next());
-*/
-var m  = isMatch("aa","a");
-console.log(m);
-var m  = isMatch("","*");
-console.log(m);

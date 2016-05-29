@@ -15,7 +15,7 @@ LeetCode
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer)|[py](./leetcode_py/Reverse Integer.py) [js](./leetcode_js/Reverse Integer.js) [java](./leetcode_java/reverse-integer/Solution.java)|Easy| |
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|[py](./leetcode_py/String to Integer (atoi).py) [js](./leetcode_js/String to Integer (atoi).js) [java](./leetcode_java/string-to-integer-atoi/Solution.java)|Easy| |
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|[py](./leetcode_py/Palindrome Number.py) [js](./leetcode_js/Palindrome Number.js) [java](./leetcode_java/palindrome-number/Solution.java)|Easy| |
-|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|[py](./leetcode_py/Regular Expression Matching.py) [java](./leetcode_java/regular-expression-matching/Solution.java)|Hard| |
+|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|[py](./leetcode_py/Regular Expression Matching.py) [js](./leetcode_js/Regular Expression Matching.js) [java](./leetcode_java/regular-expression-matching/Solution.java)|Hard|[essence](./analysis/Regular Expression Matching.md)|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water)|[py](./leetcode_py/Container With Most Water.py) [java](./leetcode_java/container-with-most-water/Solution.java)|Medium| |
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman)|[py](./leetcode_py/Integer to Roman.py) [java](./leetcode_java/integer-to-roman/Solution.java)|Medium| |
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[py](./leetcode_py/Roman to Integer.py) [java](./leetcode_java/roman-to-integer/Solution.java)|Easy| |
@@ -49,7 +49,7 @@ LeetCode
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|[py](./leetcode_py/First Missing Positive.py) [java](./leetcode_java/first-missing-positive/Solution.java)|Hard| |
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|[py](./leetcode_py/Trapping Rain Water.py) [java](./leetcode_java/trapping-rain-water/Solution.java)|Hard| |
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|[py](./leetcode_py/Multiply Strings.py) [java](./leetcode_java/multiply-strings/Solution.java)|Medium| |
-|44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|[py](./leetcode_py/Wildcard Matching.py) [java](./leetcode_java/wildcard-matching/Solution.java)|Hard| |
+|44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|[py](./leetcode_py/Wildcard Matching.py) [js](./leetcode_js/Wildcard Matching.js) [java](./leetcode_java/wildcard-matching/Solution.java)|Hard|[essence](./analysis/Wildcard Matching.md)|
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|[py](./leetcode_py/Jump Game II.py) [java](./leetcode_java/jump-game-ii/Solution.java)|Hard| |
 |46|[Permutations](https://leetcode.com/problems/permutations)|[py](./leetcode_py/Permutations.py) [java](./leetcode_java/permutations/Solution.java)|Medium| |
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[py](./leetcode_py/Permutations II.py) [java](./leetcode_java/permutations-ii/Solution.java)|Medium| |
