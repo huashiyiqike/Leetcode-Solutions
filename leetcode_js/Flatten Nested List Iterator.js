@@ -34,7 +34,6 @@ var NestedIterator = function(nestedList) {
     this.nestedList = nestedList;
 };
 
-
 /**
  * @this NestedIterator
  * @returns {boolean}
@@ -47,11 +46,27 @@ NestedIterator.prototype.hasNext = function() {
  * @this NestedIterator
  * @returns {integer}
  */
-
+function first(list){
+    var queue = [list.shift()], res;
+    while(queue.length>0){
+        var cur = queue.shift();
+        if(!cur.isInteger()){
+            for(var i = 0; i < cur.length; i++){
+                queue.push(cur[i]);
+            }
+        }else{
+            res = cur.getInteger();
+            break;
+        }
+    }
+    while(queue.length > 0){
+        list.unshift(queue.pop());
+    }
+    return res;
+}
 NestedIterator.prototype.next = function() { 
-    if(this.list.length != 0){
-        var iter = new NestedIterator(this.list);
-        return iter.next();
+    if(this.list.length != 0){ 
+        return first(this.list);
     }else{
         if(this.cur  < this.nestedList.length){
              var tmp = this.nestedList[this.cur++]; 
@@ -59,8 +74,8 @@ NestedIterator.prototype.next = function() {
              if(tmp.isInteger()){
                  return tmp.getInteger();
              }else{
-                 this.list = tmp.getList();
-                 return this.list.shift();
+                 this.list = tmp.getList(); 
+                 return first(this.list);
              }
         } 
     }
