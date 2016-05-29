@@ -1,84 +1,44 @@
-
-function NestedInteger(num) {
-    this.val = num;
-    this.isInteger = function() {
-        return this.val.length==1 && typeof(this.val[0]) == "number" ;
-    };
-
-    this.getInteger = function() {
-        return this.val[0];
-    };
-
-    this.getList = function() {
-        if(this.val.length > 1){
-            return this.val;
-        }else{
-            return null;
-        }
-    };
-};
- 
 /**
- * @constructor
- * @param {NestedInteger[]} nestedList
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
  */
-var NestedIterator = function(nestedList) {
-    this.queue = nestedList; 
-    this.nexts = null;
-};
-
-/**
- * @this NestedIterator
- * @returns {boolean}
- */
-NestedIterator.prototype.hasNext = function() {
-    if(this.nexts == null){
-        var res;
-        while(this.queue.length > 0){
-            var cur = this.queue.shift();
-            if(cur.isInteger()){
-                res = cur.getInteger();
-                break;
-            }else{
-                cur = cur.getList();
-                if(!cur) break;
-                for(var i = cur.length-1; i >= 0; i--){ 
-                    this.queue.unshift(cur[i]);
-                }
-            }
-        }
-        this.nexts = res;
+var findMedianSortedArrays = function(nums1, nums2) {
+    if(nums1.length > nums2.length){
+        var tmp = nums2;
+        nums2 = nums1;
+        nums1 = tmp;
     }
-       
-    return !(this.nexts == undefined); 
+    if((nums1.length + nums2.length) % 2 == 0){
+        return (findKth(nums1, nums2, Math.floor( (nums1.length + nums2.length) / 2)) +
+        findKth(nums1, nums2, Math.floor( (nums1.length + nums2.length) / 2)+1))  / 2;
+    }else{
+        return findKth(nums1, nums2, Math.floor( (nums1.length + nums2.length) / 2) + 1);
+    }
 };
 
-/**
- * @this NestedIterator
- * @returns {integer}
- */
-NestedIterator.prototype.next = function() { 
-    var res = this.nexts;
-    this.nexts = null;
-    return res;
-};
-
+function findKth(A, B, k){
+    if(A.length == 0){
+        return B[k-1];
+    }else if(B.length == 0){
+        return A[k-1];
+    }else if(k <= 1){
+        return Math.min(A[0], B[0]);
+    }
+    small_a = Math.min(A.length, Math.floor(k/2));
+    small_b = k - small_a;
+    if(A[small_a - 1] < B[small_b - 1]){
+        return findKth(A.slice(small_a - 1), B, k - small_a);
+    }else if(A[small_a - 1] > B[small_b - 1]){
+        return findKth(A, B.slice(small_b - 1), k - small_b);
+    }else{
+        return A[small_a - 1];
+    }
+}
 /**
  * Your NestedIterator will be called like this:
  * var i = new NestedIterator(nestedList), a = [];
  * while (i.hasNext()) a.push(i.next());
 */
-var a = new NestedInteger([1]), b = new NestedInteger([1]);
-var c = new NestedInteger([a,b]);
-var d = new NestedInteger([2]);
-var e = new NestedInteger([1]), f = new NestedInteger([1]);
-var g = new NestedInteger([e,f]);
-var x = new NestedInteger([c, d, g]);
-var i = new NestedIterator(x), m = [];
-while (i.hasNext())
- m.push(i.next());
-console.log(m);
-var i = new NestedIterator([new NestedInteger([])]);
-while (i.hasNext())
- m.push(i.next());
+var m  = findMedianSortedArrays([1,2],[1,2]);
 console.log(m);

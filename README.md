@@ -8,8 +8,8 @@ LeetCode
 |  --- | --- | --- | --- | --- | --- |
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|[py](./leetcode_py/Two Sum.py) [js](./leetcode_js/Two Sum.js) [java](./leetcode_java/two-sum/Solution.java)|Easy| |
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[py](./leetcode_py/Add Two Numbers.py) [js](./leetcode_js/Add Two Numbers.js) [java](./leetcode_java/add-two-numbers/Solution.java)|Medium| |
-|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[py](./leetcode_py/Longest Substring Without Repeating Characters.py) [js](./leetcode_js/Longest Substring Without Repeating Characters.js) [java](./leetcode_java/longest-substring-without-repeating-characters/Solution.java)|Medium|[AC](./analysis/Longest Substring Without Repeating Characters.md)|
-|4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[py](./leetcode_py/Median of Two Sorted Arrays.py) [java](./leetcode_java/median-of-two-sorted-arrays/Solution.java)|Hard| |
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[py](./leetcode_py/Longest Substring Without Repeating Characters.py) [js](./leetcode_js/Longest Substring Without Repeating Characters.js) [java](./leetcode_java/longest-substring-without-repeating-characters/Solution.java)|Medium|[kickoff](./analysis/Longest Substring Without Repeating Characters.md)|
+|4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[py](./leetcode_py/Median of Two Sorted Arrays.py) [js](./leetcode_js/Median of Two Sorted Arrays.js) [java](./leetcode_java/median-of-two-sorted-arrays/Solution.java)|Hard|[kickoff](./analysis/Median of Two Sorted Arrays.md)|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|[py](./leetcode_py/Longest Palindromic Substring.py) [java](./leetcode_java/longest-palindromic-substring/Solution.java)|Medium| |
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)|[py](./leetcode_py/ZigZag Conversion.py) [java](./leetcode_java/zigzag-conversion/Solution.java)|Easy| |
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer)|[py](./leetcode_py/Reverse Integer.py) [js](./leetcode_js/Reverse Integer.js) [java](./leetcode_java/reverse-integer/Solution.java)|Easy| |
@@ -196,20 +196,20 @@ LeetCode
 |204|[Count Primes](https://leetcode.com/problems/count-primes)|[py](./leetcode_py/Count Primes.py) [js](./leetcode_js/Count Primes.js) [java](./leetcode_java/count-primes/Solution.java)|Easy| |
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|[py](./leetcode_py/Isomorphic Strings.py) [java](./leetcode_java/isomorphic-strings/Solution.java)|Easy| |
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[py](./leetcode_py/Reverse Linked List.py) [js](./leetcode_js/Reverse Linked List.js) [java](./leetcode_java/reverse-linked-list/Solution.java)|Easy| |
-|207|[Course Schedule](https://leetcode.com/problems/course-schedule)|[py](./leetcode_py/Course Schedule.py) [js](./leetcode_js/Course Schedule.js) [java](./leetcode_java/course-schedule/Solution.java)|Medium|[AC](./analysis/Course Schedule.md)|
-|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|[py](./leetcode_py/Implement Trie (Prefix Tree).py) [js](./leetcode_js/Implement Trie (Prefix Tree).js) [java](./leetcode_java/implement-trie-prefix-tree/Solution.java)|Medium|[AC](./analysis/Implement Trie (Prefix Tree).md)|
+|207|[Course Schedule](https://leetcode.com/problems/course-schedule)|[py](./leetcode_py/Course Schedule.py) [js](./leetcode_js/Course Schedule.js) [java](./leetcode_java/course-schedule/Solution.java)|Medium|[kickoff](./analysis/Course Schedule.md)|
+|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|[py](./leetcode_py/Implement Trie (Prefix Tree).py) [js](./leetcode_js/Implement Trie (Prefix Tree).js) [java](./leetcode_java/implement-trie-prefix-tree/Solution.java)|Medium|[kickoff](./analysis/Implement Trie (Prefix Tree).md)|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)|[py](./leetcode_py/Minimum Size Subarray Sum.py) [java](./leetcode_java/minimum-size-subarray-sum/Solution.java)|Medium| |
-|210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|[py](./leetcode_py/Course Schedule II.py) [js](./leetcode_js/Course Schedule II.js) [java](./leetcode_java/course-schedule-ii/Solution.java)|Medium|[AC](./analysis/Course Schedule II.md)|
-|211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|[py](./leetcode_py/Add and Search Word - Data structure design.py) [js](./leetcode_js/Add and Search Word - Data structure design.js) [java](./leetcode_java/add-and-search-word-data-structure-design/Solution.java)|Medium|[AC](./analysis/Add and Search Word - Data structure design.md)|
-|212|[Word Search II](https://leetcode.com/problems/word-search-ii)|[py](./leetcode_py/Word Search II.py) [js](./leetcode_js/Word Search II.js) [java](./leetcode_java/word-search-ii/Solution.java)|Hard|[AC](./analysis/Word Search II.md)|
+|210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|[py](./leetcode_py/Course Schedule II.py) [js](./leetcode_js/Course Schedule II.js) [java](./leetcode_java/course-schedule-ii/Solution.java)|Medium|[kickoff](./analysis/Course Schedule II.md)|
+|211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|[py](./leetcode_py/Add and Search Word - Data structure design.py) [js](./leetcode_js/Add and Search Word - Data structure design.js) [java](./leetcode_java/add-and-search-word-data-structure-design/Solution.java)|Medium|[kickoff](./analysis/Add and Search Word - Data structure design.md)|
+|212|[Word Search II](https://leetcode.com/problems/word-search-ii)|[py](./leetcode_py/Word Search II.py) [js](./leetcode_js/Word Search II.js) [java](./leetcode_java/word-search-ii/Solution.java)|Hard|[kickoff](./analysis/Word Search II.md)|
 |213|[House Robber II](https://leetcode.com/problems/house-robber-ii)|[py](./leetcode_py/House Robber II.py) [java](./leetcode_java/house-robber-ii/Solution.java)|Medium| |
 |214|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome)|[py](./leetcode_py/Shortest Palindrome.py) [java](./leetcode_java/shortest-palindrome/Solution.java)|Hard| |
-|215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[py](./leetcode_py/Kth Largest Element in an Array.py) [java](./leetcode_java/kth-largest-element-in-an-array/Solution.java)|Medium|[AC](./analysis/Kth Largest Element in an Array.md)|
+|215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[py](./leetcode_py/Kth Largest Element in an Array.py) [java](./leetcode_java/kth-largest-element-in-an-array/Solution.java)|Medium|[kickoff](./analysis/Kth Largest Element in an Array.md)|
 |216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii)|[py](./leetcode_py/Combination Sum III.py) [java](./leetcode_java/combination-sum-iii/Solution.java)|Medium| |
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[py](./leetcode_py/Contains Duplicate.py) [java](./leetcode_java/contains-duplicate/Solution.java)|Easy| |
-|218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|[py](./leetcode_py/The Skyline Problem.py) [js](./leetcode_js/The Skyline Problem.js) [java](./leetcode_java/the-skyline-problem/Solution.java)|Hard|[AC](./analysis/The Skyline Problem.md)|
+|218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|[py](./leetcode_py/The Skyline Problem.py) [js](./leetcode_js/The Skyline Problem.js) [java](./leetcode_java/the-skyline-problem/Solution.java)|Hard|[kickoff](./analysis/The Skyline Problem.md)|
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|[py](./leetcode_py/Contains Duplicate II.py) [java](./leetcode_java/contains-duplicate-ii/Solution.java)|Easy| |
-|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)|[py](./leetcode_py/Contains Duplicate III.py) [js](./leetcode_js/Contains Duplicate III.js) [java](./leetcode_java/contains-duplicate-iii/Solution.java)|Medium|[AC](./analysis/Contains Duplicate III.md)|
+|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)|[py](./leetcode_py/Contains Duplicate III.py) [js](./leetcode_js/Contains Duplicate III.js) [java](./leetcode_java/contains-duplicate-iii/Solution.java)|Medium|[kickoff](./analysis/Contains Duplicate III.md)|
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square)|[py](./leetcode_py/Maximal Square.py) [java](./leetcode_java/maximal-square/Solution.java)|Medium| |
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|[py](./leetcode_py/Count Complete Tree Nodes.py) [java](./leetcode_java/count-complete-tree-nodes/Solution.java)|Medium| |
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area)|[py](./leetcode_py/Rectangle Area.py) [java](./leetcode_java/rectangle-area/Solution.java)|Easy| |
@@ -280,12 +280,12 @@ LeetCode
 |289|[Game of Life](https://leetcode.com/problems/game-of-life)| [java](./leetcode_java/game-of-life/Solution.java)|Medium| |
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)||Easy| |
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii)||Hard| |
-|292|[Nim Game](https://leetcode.com/problems/nim-game)| [js](./leetcode_js/Nim Game.js)|Easy|[AC](./analysis/Nim Game.md)|
+|292|[Nim Game](https://leetcode.com/problems/nim-game)| [js](./leetcode_js/Nim Game.js)|Easy|[kickoff](./analysis/Nim Game.md)|
 |293|[Flip Game](https://leetcode.com/problems/flip-game)||Easy| |
 |294|[Flip Game II](https://leetcode.com/problems/flip-game-ii)||Medium| |
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|[py](./leetcode_py/Find Median from Data Stream.py) [java](./leetcode_java/find-median-from-data-stream/Solution.java)|Hard| |
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point)||Hard| |
-|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|[py](./leetcode_py/Serialize and Deserialize Binary Tree.py) [js](./leetcode_js/Serialize and Deserialize Binary Tree.js)|Hard|[AC](./analysis/Serialize and Deserialize Binary Tree.md)|
+|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|[py](./leetcode_py/Serialize and Deserialize Binary Tree.py) [js](./leetcode_js/Serialize and Deserialize Binary Tree.js)|Hard|[kickoff](./analysis/Serialize and Deserialize Binary Tree.md)|
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)||Medium| |
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)|[py](./leetcode_py/Bulls and Cows.py)|Easy| |
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)||Medium| |
@@ -295,7 +295,7 @@ LeetCode
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)||Medium| |
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii)||Hard| |
 |306|[Additive Number](https://leetcode.com/problems/additive-number)||Medium| |
-|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)| [js](./leetcode_js/Range Sum Query - Mutable.js)|Medium|[AC](./analysis/Range Sum Query - Mutable.md)|
+|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)| [js](./leetcode_js/Range Sum Query - Mutable.js)|Medium|[kickoff](./analysis/Range Sum Query - Mutable.md)|
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable)||Hard| |
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)||Medium| |
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)||Medium| |
@@ -303,11 +303,11 @@ LeetCode
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)||Hard| |
 |313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number)||Medium| |
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)||Medium| |
-|315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)| [js](./leetcode_js/Count of Smaller Numbers After Self.js)|Hard|[AC](./analysis/Count of Smaller Numbers After Self.md)|
+|315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)| [js](./leetcode_js/Count of Smaller Numbers After Self.js)|Hard|[kickoff](./analysis/Count of Smaller Numbers After Self.md)|
 |316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)||Hard| |
 |317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings)||Hard| |
 |318|[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths)||Medium| |
-|319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)| [js](./leetcode_js/Bulb Switcher.js)|Medium|[AC](./analysis/Bulb Switcher.md)|
+|319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)| [js](./leetcode_js/Bulb Switcher.js)|Medium|[kickoff](./analysis/Bulb Switcher.md)|
 |320|[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation)||Medium| |
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number)||Hard| |
 |322|[Coin Change](https://leetcode.com/problems/coin-change)||Medium| |
@@ -317,7 +317,7 @@ LeetCode
 |326|[Power of Three](https://leetcode.com/problems/power-of-three)||Easy| |
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)| [js](./leetcode_js/Count of Range Sum.js)|Hard| |
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)||Medium| |
-|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)| [js](./leetcode_js/Longest Increasing Path in a Matrix.js)|Hard|[AC](./analysis/Longest Increasing Path in a Matrix.md)|
+|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)| [js](./leetcode_js/Longest Increasing Path in a Matrix.js)|Hard|[kickoff](./analysis/Longest Increasing Path in a Matrix.md)|
 |330|[Patching Array](https://leetcode.com/problems/patching-array)||Medium| |
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)||Medium| |
 |332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)||Medium| |
@@ -325,17 +325,17 @@ LeetCode
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)||Medium| |
 |335|[Self Crossing](https://leetcode.com/problems/self-crossing)||Hard| |
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs)| [js](./leetcode_js/Palindrome Pairs.js)|Hard| |
-|337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|[py](./leetcode_py/House Robber III.py) [js](./leetcode_js/House Robber III.js)|Medium|[AC](./analysis/House Robber III.md)|
+|337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|[py](./leetcode_py/House Robber III.py) [js](./leetcode_js/House Robber III.js)|Medium|[kickoff](./analysis/House Robber III.md)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)||Medium| |
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum)||Easy| |
 |340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)||Hard| |
-|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [js](./leetcode_js/Flatten Nested List Iterator.js)|Medium|[AC](./analysis/Flatten Nested List Iterator.md)|
+|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [js](./leetcode_js/Flatten Nested List Iterator.js)|Medium|[kickoff](./analysis/Flatten Nested List Iterator.md)|
 |342|[Power of Four](https://leetcode.com/problems/power-of-four)||Easy| |
 |343|[Integer Break](https://leetcode.com/problems/integer-break)||Medium| |
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)||Easy| |
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)||Easy| |
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream)||Easy| |
-|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| [js](./leetcode_js/Top K Frequent Elements.js)|Medium|[AC](./analysis/Top K Frequent Elements.md)|
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| [js](./leetcode_js/Top K Frequent Elements.js)|Medium|[kickoff](./analysis/Top K Frequent Elements.md)|
 |348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)||Medium| |
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)||Easy| |
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)||Easy| |
