@@ -141,8 +141,8 @@ LeetCode
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[py](./leetcode_py/Clone Graph.py) [java](./leetcode_java/clone-graph/Solution.java)|Medium| |
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|[py](./leetcode_py/Gas Station.py) [java](./leetcode_java/gas-station/Solution.java)|Medium| |
 |135|[Candy](https://leetcode.com/problems/candy)|[py](./leetcode_py/Candy.py) [js](./leetcode_js/Candy.js) [java](./leetcode_java/candy/Solution.java)|Hard| |
-|136|[Single Number](https://leetcode.com/problems/single-number)|[py](./leetcode_py/Single Number.py) [java](./leetcode_java/single-number/Solution.java)[java](./leetcode_java/LeedCode_java/single-number.java)|Medium| |
-|137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[py](./leetcode_py/Single Number II.py) [java](./leetcode_java/single-number-ii/Solution.java)[java](./leetcode_java/LeedCode_java/single-number II.java)|Medium| |
+|136|[Single Number](https://leetcode.com/problems/single-number)|[py](./leetcode_py/Single Number.py) [java](./leetcode_java/single-number/Solution.java) [java](./leetcode_java/LeedCode_java/Single Number.java)|Medium| |
+|137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[py](./leetcode_py/Single Number II.py) [java](./leetcode_java/single-number-ii/Solution.java) [java](./leetcode_java/LeedCode_java/Single Number II.java)|Medium| |
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[py](./leetcode_py/Copy List with Random Pointer.py) [java](./leetcode_java/copy-list-with-random-pointer/Solution.java)|Hard| |
 |139|[Word Break](https://leetcode.com/problems/word-break)|[py](./leetcode_py/Word Break.py) [java](./leetcode_java/word-break/Solution.java)|Medium| |
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii)|[py](./leetcode_py/Word Break II.py) [java](./leetcode_java/word-break-ii/Solution.java)|Hard| |
@@ -249,7 +249,7 @@ LeetCode
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[py](./leetcode_py/Binary Tree Paths.py) [js](./leetcode_js/Binary Tree Paths.js)|Easy| |
 |258|[Add Digits](https://leetcode.com/problems/add-digits)|[py](./leetcode_py/Add Digits.py) [java](./leetcode_java/add-digits/Solution.java)|Easy| |
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller)||Medium| |
-|260|[Single Number III](https://leetcode.com/problems/single-number-iii)|[py](./leetcode_py/Single Number III.py) [java](./leetcode_java/single-number-iii/Solution.java)[java](./leetcode_java/LeedCode_java/single-number III.java)|Medium| |
+|260|[Single Number III](https://leetcode.com/problems/single-number-iii)|[py](./leetcode_py/Single Number III.py) [java](./leetcode_java/single-number-iii/Solution.java) [java](./leetcode_java/LeedCode_java/Single Number III.java)|Medium| |
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)||Medium| |
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number)|[py](./leetcode_py/Ugly Number.py) [js](./leetcode_js/Ugly Number.js) [java](./leetcode_java/ugly-number/Solution.java)|Easy| |
 |264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii)|[py](./leetcode_py/Ugly Number II.py) [js](./leetcode_js/Ugly Number II.js)|Medium| |
