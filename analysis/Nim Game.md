@@ -5,3 +5,5 @@
 >For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
 
 There are 4*n + rest stones. Each round you or your opponent can make the total reduce to 4. The rest determines your victory.
+/*************/
+If the rest of 1,2,or 3 will victory,0 will fail.
