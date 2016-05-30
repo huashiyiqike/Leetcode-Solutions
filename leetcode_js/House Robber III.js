@@ -10,11 +10,26 @@
  * @return {number}
  */
 
- // TLE
-var rob = function(root) {
-    return depthFirst(root);
+
+function depthFirst(root){
+    if(root == undefined) return 0;
+
+    root.val += depthFirst(root.left);
+    root.val += depthFirst(root.right);
+     
+    next = (root.left!=undefined?root.left.val:0)+(root.right!=undefined?root.right.val:0)
+    root.val = Math.max(next, root.val);
+    return next;
+}
+var rob = function(root) { 
+    if(root == undefined) return 0;
+    depthFirst(root);
+    return root.val;
 };
 
+
+ // this will TLE
+ 
 function depthFirst(root){
     if(root == undefined) return 0;
     var res_y = root.val;
@@ -32,25 +47,6 @@ function depthFirst(root){
     res_n += depthFirst(root.right);
     return Math.max(res_y, res_n);
 }
+  
+
  
-function depthFirst(root):
-    if(root == None) return 0;
-
-    root.val += depthFirst(root.left)
-    root.val += depthFirst(root.right)
-     
-    next = (root.left!=None?root.left.val:0)+(root.right!=None?root.right.val:0)
-    root.val = max(next, root.val);
-    return next;
-
-
-class Solution(object):
-    def rob(self, root):
-        if not root:
-            return 0
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        depthFirst(root)
-        return root.val
