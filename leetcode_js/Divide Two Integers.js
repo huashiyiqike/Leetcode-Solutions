@@ -12,7 +12,7 @@ var divide = function(dividend, divisor) {
     var div = divisor; 
     while(dividend >= divisor){
         while(dividend >= (div + div)){
-            div += div;
+            div += div; // << 31bit shift cause overflow
             add += add;
         } 
         dividend -= div;
@@ -27,10 +27,3 @@ var divide = function(dividend, divisor) {
     res = Math.max(res , - Math.pow(2 , 31)) 
     return res;
 };
-/**
- * Your NestedIterator will be called like this:
- * var i = new NestedIterator(nestedList), a = [];
- * while (i.hasNext()) a.push(i.next());
-*/
-var m  = divide(-2147483648, -1);
-console.log(m); 
