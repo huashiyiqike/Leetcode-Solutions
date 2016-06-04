@@ -36,7 +36,7 @@ LeetCode
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[py](./leetcode_py/Implement strStr().py) [js](./leetcode_js/Implement strStr().js) [java](./leetcode_java/implement-strstr/Solution.java)|Easy| |
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|[py](./leetcode_py/Divide Two Integers.py) [js](./leetcode_js/Divide Two Integers.js) [java](./leetcode_java/divide-two-integers/Solution.java)|Medium| |
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|[py](./leetcode_py/Substring with Concatenation of All Words.py) [java](./leetcode_java/substring-with-concatenation-of-all-words/Solution.java)|Hard| |
-|31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[py](./leetcode_py/Next Permutation.py) [java](./leetcode_java/next-permutation/Solution.java)|Medium| |
+|31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[py](./leetcode_py/Next Permutation.py) [js](./leetcode_js/Next Permutation.js) [java](./leetcode_java/next-permutation/Solution.java)|Medium| |
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|[py](./leetcode_py/Longest Valid Parentheses.py) [java](./leetcode_java/longest-valid-parentheses/Solution.java)|Hard| |
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[py](./leetcode_py/Search in Rotated Sorted Array.py) [java](./leetcode_java/search-in-rotated-sorted-array/Solution.java)|Hard| |
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range)|[py](./leetcode_py/Search for a Range.py) [java](./leetcode_java/search-for-a-range/Solution.java)|Medium| |

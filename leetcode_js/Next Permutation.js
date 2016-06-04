@@ -1,9 +1,4 @@
 /**
- * @param {number} dividend
- * @param {number} divisor
- * @return {number}
- */
-/**
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
@@ -25,11 +20,3 @@ var nextPermutation = function(nums) {
     }
     nums = nums.reverse();
 };
-/**
- * Your NestedIterator will be called like this:
- * var i = new NestedIterator(nestedList), a = [];
- * while (i.hasNext()) a.push(i.next());
-*/
-var n = [1,2];
-var m  = nextPermutation(n);
-console.log(m); 
