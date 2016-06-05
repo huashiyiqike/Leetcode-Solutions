@@ -1,17 +1,10 @@
 /**
- * @param {number} dividend
- * @param {number} divisor
- * @return {number}
- */
-/**
- * @param {number[]} nums
- * @return {void} Do not return anything, modify nums in-place instead.
- */
-/**
  * @param {string} s
  * @param {string[]} words
  * @return {number[]}
  */
+ // alert: this cannot not pass the judge, hope
+ // for faster implementation
 var findSubstring = function(s, words) {
     var count = 0, dicts = [], start = 0, end = 0, 
     lens = words[0].length, res = [];
@@ -39,11 +32,3 @@ var findSubstring = function(s, words) {
     }
     return res;
 };
-/**
- * Your NestedIterator will be called like this:
- * var i = new NestedIterator(nestedList), a = [];
- * while (i.hasNext()) a.push(i.next());
-*/
-var n = [1,2];
-var m = findSubstring("barfoothefoobarman",["foo","bar"]);
-console.log(m); 
