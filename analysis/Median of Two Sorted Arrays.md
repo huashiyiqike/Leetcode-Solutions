@@ -1,0 +1,5 @@
+<backquote><pre>
+	There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+</backquote></pre>
+
+We can generalize this to finding the kth largest element K in Array A and B. There are two arrays and K can be in either one of them. What we can do is to find out a part of the arrays where K cannot be in, and remove it. (We can either remove the smaller part or the larger part.) We choose altogether k elements in A and B: A[1:x] and B[1:k-x]. If A[x] equals B[k-x], that means the values in the two slices are interwined and K is just in them: we can return either A[x] or B[k-x]. Otherwise, if A[x] < B[k-x], we are sure that K are not in the slice A[1:x] and can safely remove them, and vise versa for B.
