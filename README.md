@@ -38,7 +38,7 @@ LeetCode
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|[py](./leetcode_py/Substring with Concatenation of All Words.py) [js](./leetcode_js/Substring with Concatenation of All Words.js) [java](./leetcode_java/substring-with-concatenation-of-all-words/Solution.java)|Hard| |
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[py](./leetcode_py/Next Permutation.py) [js](./leetcode_js/Next Permutation.js) [java](./leetcode_java/next-permutation/Solution.java)|Medium| |
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|[py](./leetcode_py/Longest Valid Parentheses.py) [js](./leetcode_js/Longest Valid Parentheses.js) [java](./leetcode_java/longest-valid-parentheses/Solution.java)|Hard|[essence](./analysis/Longest Valid Parentheses.md)|
-|33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[py](./leetcode_py/Search in Rotated Sorted Array.py) [java](./leetcode_java/search-in-rotated-sorted-array/Solution.java)|Hard| |
+|33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[py](./leetcode_py/Search in Rotated Sorted Array.py) [js](./leetcode_js/Search in Rotated Sorted Array.js) [java](./leetcode_java/search-in-rotated-sorted-array/Solution.java)|Hard| |
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range)|[py](./leetcode_py/Search for a Range.py) [java](./leetcode_java/search-for-a-range/Solution.java)|Medium| |
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[py](./leetcode_py/Search Insert Position.py) [java](./leetcode_java/search-insert-position/Solution.java)|Medium| |
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku)|[py](./leetcode_py/Valid Sudoku.py) [java](./leetcode_java/valid-sudoku/Solution.java)|Easy| |
@@ -272,7 +272,7 @@ LeetCode
 |281|[Zigzag Iterator <sup>$<sup> ](https://leetcode.com/problems/zigzag-iterator)||Medium| |
 |282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators)|[py](./leetcode_py/Expression Add Operators.py) [java](./leetcode_java/expression-add-operators/Solution.java)|Hard| |
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[py](./leetcode_py/Move Zeroes.py) [java](./leetcode_java/move-zeroes/Solution.java)|Easy| |
-|284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|[py](./leetcode_py/Peeking Iterator.py)|Medium| |
+|284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator)|[py](./leetcode_py/Peeking Iterator.py) [java](./leetcode_java/peeking-iterator/Solution.java)|Medium| |
 |285|[Inorder Successor in BST <sup>$<sup> ](https://leetcode.com/problems/inorder-successor-in-bst)||Medium| |
 |286|[Walls and Gates <sup>$<sup> ](https://leetcode.com/problems/walls-and-gates)||Medium| |
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[py](./leetcode_py/Find the Duplicate Number.py) [java](./leetcode_java/find-the-duplicate-number/Solution.java)|Hard| |
@@ -280,7 +280,7 @@ LeetCode
 |289|[Game of Life](https://leetcode.com/problems/game-of-life)| [java](./leetcode_java/game-of-life/Solution.java)|Medium| |
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)||Easy| |
 |291|[Word Pattern II <sup>$<sup> ](https://leetcode.com/problems/word-pattern-ii)||Hard| |
-|292|[Nim Game](https://leetcode.com/problems/nim-game)| [js](./leetcode_js/Nim Game.js)|Easy|[essence](./analysis/Nim Game.md)|
+|292|[Nim Game](https://leetcode.com/problems/nim-game)| [js](./leetcode_js/Nim Game.js) [java](./leetcode_java/nim-game/Solution.java)|Easy|[essence](./analysis/Nim Game.md)|
 |293|[Flip Game <sup>$<sup> ](https://leetcode.com/problems/flip-game)||Easy| |
 |294|[Flip Game II <sup>$<sup> ](https://leetcode.com/problems/flip-game-ii)||Medium| |
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|[py](./leetcode_py/Find Median from Data Stream.py) [java](./leetcode_java/find-median-from-data-stream/Solution.java)|Hard| |
@@ -289,25 +289,25 @@ LeetCode
 |298|[Binary Tree Longest Consecutive Sequence <sup>$<sup> ](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence)||Medium| |
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)|[py](./leetcode_py/Bulls and Cows.py)|Easy| |
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)||Medium| |
-|301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)||Hard| |
+|301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)| [java](./leetcode_java/remove-invalid-parentheses/Solution.java)|Hard| |
 |302|[Smallest Rectangle Enclosing Black Pixels <sup>$<sup> ](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels)||Hard| |
 |303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable)||Easy| |
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)||Medium| |
 |305|[Number of Islands II <sup>$<sup> ](https://leetcode.com/problems/number-of-islands-ii)||Hard| |
 |306|[Additive Number](https://leetcode.com/problems/additive-number)||Medium| |
-|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)| [js](./leetcode_js/Range Sum Query - Mutable.js)|Medium|[essence](./analysis/Range Sum Query - Mutable.md)|
+|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable)| [js](./leetcode_js/Range Sum Query - Mutable.js) [java](./leetcode_java/range-sum-query-mutable/Solution.java)|Medium|[essence](./analysis/Range Sum Query - Mutable.md)|
 |308|[Range Sum Query 2D - Mutable <sup>$<sup> ](https://leetcode.com/problems/range-sum-query-2d-mutable)||Hard| |
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)||Medium| |
-|310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)||Medium| |
+|310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)| [java](./leetcode_java/minimum-height-trees/Solution.java)|Medium| |
 |311|[Sparse Matrix Multiplication <sup>$<sup> ](https://leetcode.com/problems/sparse-matrix-multiplication)||Medium| |
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)||Hard| |
 |313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number)||Medium| |
 |314|[Binary Tree Vertical Order Traversal <sup>$<sup> ](https://leetcode.com/problems/binary-tree-vertical-order-traversal)||Medium| |
-|315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)| [js](./leetcode_js/Count of Smaller Numbers After Self.js)|Hard|[essence](./analysis/Count of Smaller Numbers After Self.md)|
+|315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)| [js](./leetcode_js/Count of Smaller Numbers After Self.js) [java](./leetcode_java/count-of-smaller-numbers-after-self/Solution.java)|Hard|[essence](./analysis/Count of Smaller Numbers After Self.md)|
 |316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)||Hard| |
 |317|[Shortest Distance from All Buildings <sup>$<sup> ](https://leetcode.com/problems/shortest-distance-from-all-buildings)||Hard| |
 |318|[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths)||Medium| |
-|319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)| [js](./leetcode_js/Bulb Switcher.js)|Medium|[essence](./analysis/Bulb Switcher.md)|
+|319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher)| [js](./leetcode_js/Bulb Switcher.js) [java](./leetcode_java/bulb-switcher/Solution.java)|Medium|[essence](./analysis/Bulb Switcher.md)|
 |320|[Generalized Abbreviation <sup>$<sup> ](https://leetcode.com/problems/generalized-abbreviation)||Medium| |
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number)||Hard| |
 |322|[Coin Change](https://leetcode.com/problems/coin-change)||Medium| |

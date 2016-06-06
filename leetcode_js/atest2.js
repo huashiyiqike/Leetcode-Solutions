@@ -1,81 +1,49 @@
 /**
+ * @param {number} dividend
+ * @param {number} divisor
+ * @return {number}
+ */
+/**
  * @param {number[]} nums
- * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+/**
+ * @param {string} s
+ * @param {string[]} words
  * @return {number[]}
  */
- /**
- * @constructor
- * Initialize your data structure here.
- */
-var TrieNode = function() {
-    var obj = new Object();
-    obj.end = false;
-    obj.nexts = {};
-    return obj;
-};
-
-var Trie = function() {
-    this.root = TrieNode();
-};
-
-/**
- * @param {string} word
- * @return {void}
- * Inserts a word into the trie.
- */
-Trie.prototype.insert = function(word) {
-    var cur = this.root;
-    for(var i = 0; i < word.length; i++){
-        if(!(word[i] in cur.nexts)){
-            cur.nexts[word[i]] = TrieNode(); 
+var findSubstring = function(s, words) {
+    var count = 0, dicts = [], start = 0, end = 0, 
+    lens = words[0].length, res = [];
+    for(var i in words){
+        dicts[words[i]] = words[i] in dicts ? dicts[words[i]]+1 : 1;
+    }
+    for(var idx = 0; idx < s.length - lens + 1; idx++){
+        var tmpdicts = {};
+        var tmpidx = idx;
+        while(tmpidx + lens <= s.length){
+            word = s.slice(tmpidx, tmpidx + lens);
+            if(word in dicts){
+                tmpdicts[word] = word in tmpdicts ? tmpdicts[word]+1 : 1;
+                if(tmpdicts[word] > dicts[word]){
+                    break;
+                }
+            }else{
+                break;
+            }
+            tmpidx += lens;
         }
-        cur = cur.nexts[word[i]];
+        if( Math.floor((tmpidx - idx) / lens) == words.length){
+            res.push(idx);
+        } 
     }
-    cur.end = true;
+    return res;
 };
-
 /**
- * @param {string} word
- * @return {boolean}
- * Returns if the word is in the trie.
- */
-Trie.prototype.search = function(word) {
-    var cur = this.root;
-    for(var i = 0 ; i < word.length; i++){
-        if(!cur || !cur.nexts || !(word[i] in cur.nexts)){return false;}
-        cur = cur.nexts[word[i]];
-    }
-    return cur.end === true;
-};
-
-/**
- * @param {string} prefix
- * @return {boolean}
- * Returns if there is any word in the trie
- * that starts with the given prefix.
- */
-Trie.prototype.startsWith = function(prefix) {
-    var cur = this.root;
-    for(var i = 0 ; i < prefix.length; i++){
-        if(!cur || !cur.nexts || !(prefix[i] in cur.nexts)){return false;}
-        cur = cur.nexts[prefix[i]];
-    }
-    return true;
-};
-
-/**
- * Your Trie object will be instantiated and called as such:
- * var trie = new Trie();
- * trie.insert("somestring");
- * trie.search("key");
- */
-
-/**
- * Your functions will be called as such:
- * deserialize(serialize(root));
- */
-
-var tri = new Trie();
-tri.insert("a");
-tri.search("a");
-tri.startsWith("a")
+ * Your NestedIterator will be called like this:
+ * var i = new NestedIterator(nestedList), a = [];
+ * while (i.hasNext()) a.push(i.next());
+*/
+var n = [1,2];
+var m = findSubstring("barfoothefoobarman",["foo","bar"]);
+console.log(m); 

@@ -16,10 +16,11 @@ var longestValidParentheses = function(s) {
     				maxlen = Math.max(maxlen, i - left + 1);
     			}else{
     				maxlen = Math.max(maxlen, 
-    					i - stack[stack.length - 1] + 1);
+    					i - stack[stack.length - 1] );
     			}
     		}
     	}
     }
     return maxlen;
 };
+
