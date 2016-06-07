@@ -52,7 +52,7 @@ class Solution:
     # @param target, an integer to be searched
     # @return a list of length 2, [index1, index2]
     def searchRange(self, A, target):
-        l, r, ll, rr = 0, len(A) - 1, -1, -1
+        l, r = 0, len(A) - 1
         while l <= r:
             mid = (l + r) / 2
             if A[mid] < target:
@@ -60,7 +60,7 @@ class Solution:
             else:
                 r = mid - 1
         ll = l
-        l, r = r, len(A) - 1
+        l, r = 0, len(A) - 1
         while l <= r:
             mid = (l + r) / 2
             if A[mid] <= target:
