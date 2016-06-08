@@ -31,7 +31,6 @@ var solveSudoku = function(board) {
     }
     helper(board, 0, 0); 
 
-
     function helper(board, idx, idy){
         if(idy > 8){
             return helper(board, idx + 1, 0);
@@ -59,12 +58,3 @@ var solveSudoku = function(board) {
         return false;
     }
 };
-
-/**
- * Your NestedIterator will be called like this:
- * var i = new NestedIterator(nestedList), a = [];
- * while (i.hasNext()) a.push(i.next());
-*/
-var n = [1,2];
-var m = solveSudoku(["..9748...","7........",".2.1.9...","..7...24.",".64.1.59.",".98...3..","...8.3.2.","........6","...2759.."]);
-console.log(m); 
