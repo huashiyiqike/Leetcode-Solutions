@@ -8,11 +8,6 @@ var isValidSudoku = function(board) {
     	row[i] = Array(board[0].length);
     	col[i] = Array(board[0].length);
     	x[i] = Array(board[0].length);
-    	for(var j = 0; j < 9; j++){
-    		row[i][j] = false;
-    		col[i][j] = false;
-    		x[i][j] = false;
-    	}
     }
     for(var i = 0; i < 9; i++){
     	for(var j = 0; j < 9; j++){
@@ -23,7 +18,7 @@ var isValidSudoku = function(board) {
     				|| x[k][num]){
     				return false;
     			}
-    			row[i][num] = col[j][num] = x[k][num];
+    			row[i][num] = col[j][num] = x[k][num] = true;
     		}
     	}
     }

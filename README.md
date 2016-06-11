@@ -43,10 +43,10 @@ LeetCode
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|[py](./leetcode_py/Search Insert Position.py) [js](./leetcode_js/Search Insert Position.js) [java](./leetcode_java/search-insert-position/Solution.java)|Medium| |
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku)|[py](./leetcode_py/Valid Sudoku.py) [js](./leetcode_js/Valid Sudoku.js) [java](./leetcode_java/valid-sudoku/Solution.java)|Easy| |
 |37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver)|[py](./leetcode_py/Sudoku Solver.py) [js](./leetcode_js/Sudoku Solver.js) [java](./leetcode_java/sudoku-solver/Solution.java)|Hard| |
-|38|[Count and Say](https://leetcode.com/problems/count-and-say)|[py](./leetcode_py/Count and Say.py) [java](./leetcode_java/count-and-say/Solution.java)|Easy| |
+|38|[Count and Say](https://leetcode.com/problems/count-and-say)|[py](./leetcode_py/Count and Say.py) [js](./leetcode_js/Count and Say.js) [java](./leetcode_java/count-and-say/Solution.java)|Easy| |
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|[py](./leetcode_py/Combination Sum.py) [js](./leetcode_js/Combination Sum.js) [java](./leetcode_java/combination-sum/Solution.java)|Medium| |
-|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[py](./leetcode_py/Combination Sum II.py) [java](./leetcode_java/combination-sum-ii/Solution.java)|Medium| |
-|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|[py](./leetcode_py/First Missing Positive.py) [java](./leetcode_java/first-missing-positive/Solution.java)|Hard| |
+|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[py](./leetcode_py/Combination Sum II.py) [js](./leetcode_js/Combination Sum II.js) [java](./leetcode_java/combination-sum-ii/Solution.java)|Medium| |
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|[py](./leetcode_py/First Missing Positive.py) [js](./leetcode_js/First Missing Positive.js) [java](./leetcode_java/first-missing-positive/Solution.java)|Hard| |
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|[py](./leetcode_py/Trapping Rain Water.py) [java](./leetcode_java/trapping-rain-water/Solution.java)|Hard| |
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|[py](./leetcode_py/Multiply Strings.py) [java](./leetcode_java/multiply-strings/Solution.java)|Medium| |
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|[py](./leetcode_py/Wildcard Matching.py) [js](./leetcode_js/Wildcard Matching.js) [java](./leetcode_java/wildcard-matching/Solution.java)|Hard|[essence](./analysis/Wildcard Matching.md)|
