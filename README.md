@@ -48,9 +48,9 @@ LeetCode
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|[py](./leetcode_py/Combination Sum II.py) [js](./leetcode_js/Combination Sum II.js) [java](./leetcode_java/combination-sum-ii/Solution.java)|Medium| |
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|[py](./leetcode_py/First Missing Positive.py) [js](./leetcode_js/First Missing Positive.js) [java](./leetcode_java/first-missing-positive/Solution.java)|Hard| |
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|[py](./leetcode_py/Trapping Rain Water.py) [js](./leetcode_js/Trapping Rain Water.js) [java](./leetcode_java/trapping-rain-water/Solution.java)|Hard| |
-|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|[py](./leetcode_py/Multiply Strings.py) [java](./leetcode_java/multiply-strings/Solution.java)|Medium| |
+|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|[py](./leetcode_py/Multiply Strings.py) [js](./leetcode_js/Multiply Strings.js) [java](./leetcode_java/multiply-strings/Solution.java)|Medium| |
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|[py](./leetcode_py/Wildcard Matching.py) [js](./leetcode_js/Wildcard Matching.js) [java](./leetcode_java/wildcard-matching/Solution.java)|Hard|[essence](./analysis/Wildcard Matching.md)|
-|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|[py](./leetcode_py/Jump Game II.py) [java](./leetcode_java/jump-game-ii/Solution.java)|Hard| |
+|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|[py](./leetcode_py/Jump Game II.py) [js](./leetcode_js/Jump Game II.js) [java](./leetcode_java/jump-game-ii/Solution.java)|Hard|[essence](./analysis/Jump Game II.md)|
 |46|[Permutations](https://leetcode.com/problems/permutations)|[py](./leetcode_py/Permutations.py) [java](./leetcode_java/permutations/Solution.java)|Medium| |
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[py](./leetcode_py/Permutations II.py) [java](./leetcode_java/permutations-ii/Solution.java)|Medium| |
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|[py](./leetcode_py/Rotate Image.py) [java](./leetcode_java/rotate-image/Solution.java)|Medium| |
