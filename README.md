@@ -51,7 +51,7 @@ LeetCode
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|[py](./leetcode_py/Multiply Strings.py) [js](./leetcode_js/Multiply Strings.js) [java](./leetcode_java/multiply-strings/Solution.java)|Medium| |
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching)|[py](./leetcode_py/Wildcard Matching.py) [js](./leetcode_js/Wildcard Matching.js) [java](./leetcode_java/wildcard-matching/Solution.java)|Hard|[essence](./analysis/Wildcard Matching.md)|
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|[py](./leetcode_py/Jump Game II.py) [js](./leetcode_js/Jump Game II.js) [java](./leetcode_java/jump-game-ii/Solution.java)|Hard|[essence](./analysis/Jump Game II.md)|
-|46|[Permutations](https://leetcode.com/problems/permutations)|[py](./leetcode_py/Permutations.py) [java](./leetcode_java/permutations/Solution.java)|Medium| |
+|46|[Permutations](https://leetcode.com/problems/permutations)|[py](./leetcode_py/Permutations.py) [js](./leetcode_js/Permutations.js) [java](./leetcode_java/permutations/Solution.java)|Medium|[essence](./analysis/Permutations.md)|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[py](./leetcode_py/Permutations II.py) [java](./leetcode_java/permutations-ii/Solution.java)|Medium| |
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|[py](./leetcode_py/Rotate Image.py) [java](./leetcode_java/rotate-image/Solution.java)|Medium| |
 |49|[Group Anagrams](https://leetcode.com/problems/anagrams)| [java](./leetcode_java/anagrams/Solution.java)|Medium| |
