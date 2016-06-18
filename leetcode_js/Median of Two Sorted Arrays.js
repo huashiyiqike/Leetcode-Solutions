@@ -28,9 +28,9 @@ function findKth(A, B, k){
     small_a = Math.min(A.length, Math.floor(k/2));
     small_b = k - small_a;
     if(A[small_a - 1] < B[small_b - 1]){
-        return findKth(A.slice(small_a - 1), B, k - small_a);
+        return findKth(A.slice(small_a), B, k - small_a);
     }else if(A[small_a - 1] > B[small_b - 1]){
-        return findKth(A, B.slice(small_b - 1), k - small_b);
+        return findKth(A, B.slice(small_b), k - small_b);
     }else{
         return A[small_a - 1];
     }

@@ -1,3 +1,5 @@
+// two hash array
+
 /**
  * @param {number[]} nums
  * @param {number} k

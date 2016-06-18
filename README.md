@@ -331,7 +331,7 @@ LeetCode
 |340|[Longest Substring with At Most K Distinct Characters <sup>$<sup> ](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)||Hard| |
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [js](./leetcode_js/Flatten Nested List Iterator.js)|Medium|[essence](./analysis/Flatten Nested List Iterator.md)|
 |342|[Power of Four](https://leetcode.com/problems/power-of-four)||Easy| |
-|343|[Integer Break](https://leetcode.com/problems/integer-break)||Medium| |
+|343|[Integer Break](https://leetcode.com/problems/integer-break)| [js](./leetcode_js/Integer Break.js)|Medium| |
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)||Easy| |
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)||Easy| |
 |346|[Moving Average from Data Stream <sup>$<sup> ](https://leetcode.com/problems/moving-average-from-data-stream)||Easy| |
