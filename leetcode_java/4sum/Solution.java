@@ -18,7 +18,7 @@ public class Solution {
         for(int i = 0; i < nums.length; i++){
             if(i>0 && nums[i] == nums[i-1]) continue;
             for(int j = i+1; j < nums.length-2; j++){
-                twosum(nums, target, res, i, j);
+                twosum(nums, target-nums[i]-nums[j], res, i, j);
             }
         }
 

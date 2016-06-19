@@ -312,13 +312,13 @@ LeetCode
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number)||Hard| |
 |322|[Coin Change](https://leetcode.com/problems/coin-change)||Medium| |
 |323|[Number of Connected Components in an Undirected Graph <sup>$<sup> ](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)||Medium| |
-|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)||Medium| |
-|325|[Maximum Size Subarray Sum Equals k <sup>$<sup> ](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)||Easy| |
-|326|[Power of Three](https://leetcode.com/problems/power-of-three)||Easy| |
+|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)||Medium|[essence](./analysis/Wiggle Sort II.md)|
+|325|[Maximum Size Subarray Sum Equals k <sup>$<sup> ](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)||Medium| |
+|326|[Power of Three](https://leetcode.com/problems/power-of-three)| [js](./leetcode_js/Power of Three.js)|Easy| |
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)| [js](./leetcode_js/Count of Range Sum.js)|Hard| |
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)||Medium| |
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)| [js](./leetcode_js/Longest Increasing Path in a Matrix.js)|Hard|[essence](./analysis/Longest Increasing Path in a Matrix.md)|
-|330|[Patching Array](https://leetcode.com/problems/patching-array)||Medium| |
+|330|[Patching Array](https://leetcode.com/problems/patching-array)| [js](./leetcode_js/Patching Array.js)|Hard|[essence](./analysis/Patching Array.md)|
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)||Medium| |
 |332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)||Medium| |
 |333|[Largest BST Subtree <sup>$<sup> ](https://leetcode.com/problems/largest-bst-subtree)||Medium| |
@@ -330,13 +330,23 @@ LeetCode
 |339|[Nested List Weight Sum <sup>$<sup> ](https://leetcode.com/problems/nested-list-weight-sum)||Easy| |
 |340|[Longest Substring with At Most K Distinct Characters <sup>$<sup> ](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)||Hard| |
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [js](./leetcode_js/Flatten Nested List Iterator.js)|Medium|[essence](./analysis/Flatten Nested List Iterator.md)|
-|342|[Power of Four](https://leetcode.com/problems/power-of-four)||Easy| |
+|342|[Power of Four](https://leetcode.com/problems/power-of-four)| [js](./leetcode_js/Power of Four.js)|Easy| |
 |343|[Integer Break](https://leetcode.com/problems/integer-break)| [js](./leetcode_js/Integer Break.js)|Medium| |
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)||Easy| |
-|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)||Easy| |
+|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)| [js](./leetcode_js/Reverse Vowels of a String.js)|Easy| |
 |346|[Moving Average from Data Stream <sup>$<sup> ](https://leetcode.com/problems/moving-average-from-data-stream)||Easy| |
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| [js](./leetcode_js/Top K Frequent Elements.js)|Medium|[essence](./analysis/Top K Frequent Elements.md)|
 |348|[Design Tic-Tac-Toe <sup>$<sup> ](https://leetcode.com/problems/design-tic-tac-toe)||Medium| |
-|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)||Easy| |
-|350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)||Easy| |
+|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)| [js](./leetcode_js/Intersection of Two Arrays.js)|Easy| |
+|350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)| [js](./leetcode_js/Intersection of Two Arrays II.js)|Easy| |
 |351|[Android Unlock Patterns <sup>$<sup> ](https://leetcode.com/problems/android-unlock-patterns)||Medium| |
+|352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals)||Hard| |
+|353|[Design Snake Game <sup>$<sup> ](https://leetcode.com/problems/design-snake-game)||Medium| |
+|354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)||Hard| |
+|355|[Design Twitter](https://leetcode.com/problems/design-twitter)||Medium| |
+|356|[Line Reflection <sup>$<sup> ](https://leetcode.com/problems/line-reflection)||Medium| |
+|357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits)| [js](./leetcode_js/Count Numbers with Unique Digits.js)|Medium| |
+|358|[Rearrange String k Distance Apart <sup>$<sup> ](https://leetcode.com/problems/rearrange-string-k-distance-apart)||Hard| |
+|359|[Logger Rate Limiter <sup>$<sup> ](https://leetcode.com/problems/logger-rate-limiter)||Easy| |
+|360|[Sort Transformed Array <sup>$<sup> ](https://leetcode.com/problems/sort-transformed-array)||Medium| |
+|361|[Bomb Enemy <sup>$<sup> ](https://leetcode.com/problems/bomb-enemy)||Medium| |

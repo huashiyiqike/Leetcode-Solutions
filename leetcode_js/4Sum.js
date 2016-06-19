@@ -26,13 +26,9 @@ var fourSum = function(nums, target) {
                     right--;
                 }else{
                     var res3 = nums[left], res4 = nums[right];
-                    res.push([res1, res2, res3, res4]);
-//                    for(var ii = 0 ; ii < res.length; ii++){
-//document.writeln("<br>"+res[ii]);
-//                 }
+                    res.push([res1, res2, res3, res4]); 
                     while(left < nums.length && nums[left] === res3) left++;
-                    while(right >= 0 && nums[right] === res4) right--;
-                  //  left++;
+                    while(right >= 0 && nums[right] === res4) right--; 
                 }
                 
             }
@@ -41,10 +37,8 @@ var fourSum = function(nums, target) {
     }
     return res;
 };
-var tmp = fourSum([-1,-5,-5,-3,2,5,0,4], -7);
-for(var i = 0 ; i < tmp.length; i++){
-document.writeln("<br>"+tmp[i]);
-                 }// TLE
+ 
+// WA
 var twoSum = function(nums, start, res, target, tmpres){
     var map = {};
     for(var i = start; i < nums.length; i++){
@@ -68,5 +62,4 @@ var fourSum = function(nums, target) {
         }
     }
     return res;
-};
-//document.writeln(fourSum([1, 0, -1, 0, -2, 2], 0))
+}; 
