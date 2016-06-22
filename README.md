@@ -141,13 +141,8 @@ LeetCode
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[py](./leetcode_py/Clone Graph.py) [java](./leetcode_java/clone-graph/Solution.java)|Medium| |
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|[py](./leetcode_py/Gas Station.py) [java](./leetcode_java/gas-station/Solution.java)|Medium| |
 |135|[Candy](https://leetcode.com/problems/candy)|[py](./leetcode_py/Candy.py) [js](./leetcode_js/Candy.js) [java](./leetcode_java/candy/Solution.java)|Hard| |
-<<<<<<< HEAD
 |136|[Single Number](https://leetcode.com/problems/single-number)|[py](./leetcode_py/Single Number.py) [java](./leetcode_java/single-number/Solution.java)|Medium|[essence](./analysis/Single Number.md)|
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[py](./leetcode_py/Single Number II.py) [java](./leetcode_java/single-number-ii/Solution.java)|Medium|[essence](./analysis/Single Number II.md)|
-=======
-|136|[Single Number](https://leetcode.com/problems/single-number)|[py](./leetcode_py/Single Number.py) [java](./leetcode_java/single-number/Solution.java) [java](./leetcode_java/LeedCode_java/Single Number.java)|Medium| |
-|137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[py](./leetcode_py/Single Number II.py) [java](./leetcode_java/single-number-ii/Solution.java) [java](./leetcode_java/LeedCode_java/Single Number II.java)|Medium| |
->>>>>>> 4cab2a4a77240e7cc347b357366643357e27b79b
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[py](./leetcode_py/Copy List with Random Pointer.py) [java](./leetcode_java/copy-list-with-random-pointer/Solution.java)|Hard| |
 |139|[Word Break](https://leetcode.com/problems/word-break)|[py](./leetcode_py/Word Break.py) [java](./leetcode_java/word-break/Solution.java)|Medium| |
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii)|[py](./leetcode_py/Word Break II.py) [java](./leetcode_java/word-break-ii/Solution.java)|Hard| |
@@ -253,15 +248,9 @@ LeetCode
 |256|[Paint House <sup>$<sup> ](https://leetcode.com/problems/paint-house)||Medium| |
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[py](./leetcode_py/Binary Tree Paths.py) [js](./leetcode_js/Binary Tree Paths.js)|Easy| |
 |258|[Add Digits](https://leetcode.com/problems/add-digits)|[py](./leetcode_py/Add Digits.py) [java](./leetcode_java/add-digits/Solution.java)|Easy| |
-<<<<<<< HEAD
 |259|[3Sum Smaller <sup>$<sup> ](https://leetcode.com/problems/3sum-smaller)||Medium| |
 |260|[Single Number III](https://leetcode.com/problems/single-number-iii)|[py](./leetcode_py/Single Number III.py) [java](./leetcode_java/single-number-iii/Solution.java)|Medium|[essence](./analysis/Single Number III.md)|
 |261|[Graph Valid Tree <sup>$<sup> ](https://leetcode.com/problems/graph-valid-tree)||Medium| |
-=======
-|259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller)||Medium| |
-|260|[Single Number III](https://leetcode.com/problems/single-number-iii)|[py](./leetcode_py/Single Number III.py) [java](./leetcode_java/single-number-iii/Solution.java) [java](./leetcode_java/LeedCode_java/Single Number III.java)|Medium| |
-|261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree)||Medium| |
->>>>>>> 4cab2a4a77240e7cc347b357366643357e27b79b
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number)|[py](./leetcode_py/Ugly Number.py) [js](./leetcode_js/Ugly Number.js) [java](./leetcode_java/ugly-number/Solution.java)|Easy| |
 |264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii)|[py](./leetcode_py/Ugly Number II.py) [js](./leetcode_js/Ugly Number II.js)|Medium| |
 |265|[Paint House II <sup>$<sup> ](https://leetcode.com/problems/paint-house-ii)||Hard| |
@@ -323,30 +312,30 @@ LeetCode
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number)||Hard| |
 |322|[Coin Change](https://leetcode.com/problems/coin-change)||Medium| |
 |323|[Number of Connected Components in an Undirected Graph <sup>$<sup> ](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)||Medium| |
-|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)||Medium|[essence](./analysis/Wiggle Sort II.md)|
+|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)| [java](./leetcode_java/wiggle-sort-ii/Solution.java)|Medium|[essence](./analysis/Wiggle Sort II.md)|
 |325|[Maximum Size Subarray Sum Equals k <sup>$<sup> ](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)||Medium| |
 |326|[Power of Three](https://leetcode.com/problems/power-of-three)| [js](./leetcode_js/Power of Three.js)|Easy| |
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)| [js](./leetcode_js/Count of Range Sum.js)|Hard| |
-|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)||Medium| |
-|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)| [js](./leetcode_js/Longest Increasing Path in a Matrix.js)|Hard|[essence](./analysis/Longest Increasing Path in a Matrix.md)|
-|330|[Patching Array](https://leetcode.com/problems/patching-array)| [js](./leetcode_js/Patching Array.js)|Hard|[essence](./analysis/Patching Array.md)|
-|331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)||Medium| |
-|332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)||Medium| |
+|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)| [java](./leetcode_java/odd-even-linked-list/Solution.java)|Medium| |
+|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)| [js](./leetcode_js/Longest Increasing Path in a Matrix.js) [java](./leetcode_java/longest-increasing-path-in-a-matrix/Solution.java)|Hard|[essence](./analysis/Longest Increasing Path in a Matrix.md)|
+|330|[Patching Array](https://leetcode.com/problems/patching-array)| [js](./leetcode_js/Patching Array.js) [java](./leetcode_java/patching-array/Solution.java)|Hard|[essence](./analysis/Patching Array.md)|
+|331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)| [java](./leetcode_java/verify-preorder-serialization-of-a-binary-tree/Solution.java)|Medium| |
+|332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)| [java](./leetcode_java/reconstruct-itinerary/Solution.java)|Medium| |
 |333|[Largest BST Subtree <sup>$<sup> ](https://leetcode.com/problems/largest-bst-subtree)||Medium| |
-|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)||Medium| |
+|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)| [java](./leetcode_java/increasing-triplet-subsequence/Solution.java)|Medium| |
 |335|[Self Crossing](https://leetcode.com/problems/self-crossing)||Hard| |
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs)| [js](./leetcode_js/Palindrome Pairs.js)|Hard| |
-|337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|[py](./leetcode_py/House Robber III.py) [js](./leetcode_js/House Robber III.js)|Medium|[essence](./analysis/House Robber III.md)|
+|337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|[py](./leetcode_py/House Robber III.py) [js](./leetcode_js/House Robber III.js) [java](./leetcode_java/house-robber-iii/Solution.java)|Medium|[essence](./analysis/House Robber III.md)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)||Medium| |
 |339|[Nested List Weight Sum <sup>$<sup> ](https://leetcode.com/problems/nested-list-weight-sum)||Easy| |
 |340|[Longest Substring with At Most K Distinct Characters <sup>$<sup> ](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)||Hard| |
-|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [js](./leetcode_js/Flatten Nested List Iterator.js)|Medium|[essence](./analysis/Flatten Nested List Iterator.md)|
-|342|[Power of Four](https://leetcode.com/problems/power-of-four)| [js](./leetcode_js/Power of Four.js)|Easy| |
-|343|[Integer Break](https://leetcode.com/problems/integer-break)| [js](./leetcode_js/Integer Break.js)|Medium| |
+|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [js](./leetcode_js/Flatten Nested List Iterator.js) [java](./leetcode_java/flatten-nested-list-iterator/Solution.java)|Medium|[essence](./analysis/Flatten Nested List Iterator.md)|
+|342|[Power of Four](https://leetcode.com/problems/power-of-four)| [js](./leetcode_js/Power of Four.js) [java](./leetcode_java/power-of-four/Solution.java)|Easy| |
+|343|[Integer Break](https://leetcode.com/problems/integer-break)| [js](./leetcode_js/Integer Break.js) [java](./leetcode_java/integer-break/Solution.java)|Medium| |
 |344|[Reverse String](https://leetcode.com/problems/reverse-string)||Easy| |
-|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)| [js](./leetcode_js/Reverse Vowels of a String.js)|Easy| |
+|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)| [js](./leetcode_js/Reverse Vowels of a String.js) [java](./leetcode_java/reverse-vowels-of-a-string/Solution.java)|Easy| |
 |346|[Moving Average from Data Stream <sup>$<sup> ](https://leetcode.com/problems/moving-average-from-data-stream)||Easy| |
-|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| [js](./leetcode_js/Top K Frequent Elements.js)|Medium|[essence](./analysis/Top K Frequent Elements.md)|
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| [js](./leetcode_js/Top K Frequent Elements.js) [java](./leetcode_java/top-k-frequent-elements/Solution.java)|Medium|[essence](./analysis/Top K Frequent Elements.md)|
 |348|[Design Tic-Tac-Toe <sup>$<sup> ](https://leetcode.com/problems/design-tic-tac-toe)||Medium| |
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)| [js](./leetcode_js/Intersection of Two Arrays.js)|Easy| |
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)| [js](./leetcode_js/Intersection of Two Arrays II.js)|Easy| |
