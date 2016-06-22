@@ -105,7 +105,7 @@ LeetCode
 |97|[Interleaving String](https://leetcode.com/problems/interleaving-string)|[py](./leetcode_py/Interleaving String.py) [java](./leetcode_java/interleaving-string/Solution.java)|Hard| |
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|[py](./leetcode_py/Validate Binary Search Tree.py) [java](./leetcode_java/validate-binary-search-tree/Solution.java)|Medium| |
 |99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)|[py](./leetcode_py/Recover Binary Search Tree.py) [java](./leetcode_java/recover-binary-search-tree/Solution.java)|Hard| |
-|100|[Same Tree](https://leetcode.com/problems/same-tree)|[py](./leetcode_py/Same Tree.py) [java](./leetcode_java/same-tree/Solution.java)|Easy| |
+|100|[Same Tree](https://leetcode.com/problems/same-tree)|[py](./leetcode_py/Same Tree.py) [js](./leetcode_js/Same Tree.js) [java](./leetcode_java/same-tree/Solution.java)|Easy| |
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree)|[py](./leetcode_py/Symmetric Tree.py) [java](./leetcode_java/symmetric-tree/Solution.java)|Easy| |
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|[py](./leetcode_py/Binary Tree Level Order Traversal.py) [java](./leetcode_java/binary-tree-level-order-traversal/Solution.java)|Easy| |
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|[py](./leetcode_py/Binary Tree Zigzag Level Order Traversal.py) [java](./leetcode_java/binary-tree-zigzag-level-order-traversal/Solution.java)|Medium| |

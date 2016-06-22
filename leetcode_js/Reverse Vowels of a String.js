@@ -7,10 +7,10 @@ var reverseVowels = function(s) {
     var vow = {'a':1, 'e':1, 'i':1, 'o':1, 'u':1, 'A':1, 'E':1, 'I':1, 'O':1, 'U':1};
     var le = 0, ri = s.length - 1;
     while(le < ri){
-    	while(!(s[le] in vow)){
+    	while(le < s.length && !(s[le] in vow)){
     		le++;
     	}
-    	while(!(s[ri] in vow)){
+    	while(ri >= 0 && !(s[ri] in vow)){
     		ri--;
     	}
     	if(le < ri){
