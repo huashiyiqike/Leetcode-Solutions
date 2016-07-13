@@ -2,21 +2,34 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var wiggleSort = function(nums) {
-    nums.sort(function(a, b){return a - b;});
-    var len = nums.length, mid = Math.floor((len-1)/2);
-    var index = 0;
-    var arr = Array(len);
-    for(var i = 0; i <= mid ;i++){
-      arr[index] = nums[mid-i];
-      if((index + 1) < len){
-        arr[index+1] = nums[len-i-1];
-      }
-      index += 2;
+var helper = function (nums, res, path, vis) {
+    if (path.length == nums.length) {
+        res.push(path.slice());
+        return;
     }
-    for(var i = 0; i < len; i++){
-      nums[i] = arr[i];
+    for (var i = 0; i < nums.length; i++) {
+        if (i > 0 && nums[i] == nums[i - 1] && vis[i - 1]) {
+            continue;
+        }
+        if (!vis[i]) {
+            vis[i] = true;
+            console.log(vis);
+            var tmp_path = path.slice();
+            tmp_path.push(nums[i]);
+            helper(nums, res, tmp_path, vis);
+            vis[i] = false;
+        }
     }
+};
+var permuteUnique = function (nums) {
+    nums = nums.sort(function (a, b) { return a - b; });
+    var res = [];
+    var vis = [];
+    for (var i = 0; i < nums.length; i++) {
+        vis[i] = false;
+    }
+    helper(nums, res, [], vis);
+    return res;
 };
 
  
@@ -28,4 +41,4 @@ var wiggleSort = function(nums) {
 */
 //console.log(findItinerary([["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]));
 
-console.log(wiggleSort([1,5,1,1,6,4]));
+console.log(permuteUnique([1, 1, 2]));
