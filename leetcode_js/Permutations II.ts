@@ -16,9 +16,9 @@ function(nums: number[], res: number[][], path: number[], vis: boolean[]){
 		}
 		if(!vis[i]){
 			vis[i] = true;
-			let tmp_path = path.slice();
-			tmp_path.push(nums[i]);
-			helper(nums, res, tmp_path, vis);
+			path.push(nums[i]);
+			helper(nums, res, path, vis);
+			path.pop();
 			vis[i] = false;
 		}
 	}
