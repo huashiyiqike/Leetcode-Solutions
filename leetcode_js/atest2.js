@@ -1,45 +1,25 @@
 /**
- * @param {number} dividend
- * @param {number} divisor
- * @return {number}
- */
-/**
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-/**
- * @param {character[][]} board
- * @return {void} Do not return anything, modify board in-place instead.
- */
-/**
- * @param {number[]} nums1
- * @param {number[]} nums2
- * @return {number}
- */
-/**
- * @param {string[][]} tickets
- * @return {string[]}
- */
-var findItinerary = function(tickets) {
-    var dict = {};
-    for(var i = 0; i < tickets.length; i++){
-        if(tickets[i][0] in dict){
-            dict[tickets[i][0]].push(tickets[i][1]);
-        }else{
-            dict[tickets[i][0]] = [tickets[i][1]];
-        }
+var wiggleSort = function(nums) {
+    nums.sort(function(a, b){return a - b;});
+    var len = nums.length, mid = Math.floor((len-1)/2);
+    var index = 0;
+    var arr = Array(len);
+    for(var i = 0; i <= mid ;i++){
+      arr[index] = nums[mid-i];
+      if((index + 1) < len){
+        arr[index+1] = nums[len-i-1];
+      }
+      index += 2;
     }
-    for(var i in dict){
-        dict[i].sort();
+    for(var i = 0; i < len; i++){
+      nums[i] = arr[i];
     }
-    var res = ["JFK"];
-    for(var i = 0; i < tickets.length; i++){
-        var key = res[res.length - 1];
-        res.push(dict[key][0]);
-        dict[key].shift();
-    }
-    return res;
 };
+
+ 
 
 /**
  * Your NestedIterator will be called like this:
@@ -48,4 +28,4 @@ var findItinerary = function(tickets) {
 */
 //console.log(findItinerary([["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]));
 
-console.log(findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]));
+console.log(wiggleSort([1,5,1,1,6,4]));
