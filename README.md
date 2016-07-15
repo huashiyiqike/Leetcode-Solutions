@@ -55,7 +55,7 @@ LeetCode
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii)|[py](./leetcode_py/Permutations II.py) [js](./leetcode_js/Permutations II.js) [ts](./leetcode_js/Permutations II.ts) [java](./leetcode_java/permutations-ii/Solution.java)|Medium| |
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image)|[py](./leetcode_py/Rotate Image.py) [js](./leetcode_js/Rotate Image.js) [ts](./leetcode_js/Rotate Image.ts) [java](./leetcode_java/rotate-image/Solution.java)|Medium| |
 |49|[Group Anagrams](https://leetcode.com/problems/anagrams)| [java](./leetcode_java/anagrams/Solution.java)|Medium| |
-|50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[py](./leetcode_py/Pow(x, n).py) [java](./leetcode_java/powx-n/Solution.java)|Medium| |
+|50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[py](./leetcode_py/Pow(x, n).py) [js](./leetcode_js/Pow(x, n).js) [ts](./leetcode_js/Pow(x, n).ts) [java](./leetcode_java/powx-n/Solution.java)|Medium| |
 |51|[N-Queens](https://leetcode.com/problems/n-queens)|[py](./leetcode_py/N-Queens.py) [java](./leetcode_java/n-queens/Solution.java)|Hard| |
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|[py](./leetcode_py/N-Queens II.py) [java](./leetcode_java/n-queens-ii/Solution.java)|Hard| |
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[py](./leetcode_py/Maximum Subarray.py) [js](./leetcode_js/Maximum Subarray.js) [ts](./leetcode_js/Maximum Subarray.ts) [java](./leetcode_java/maximum-subarray/Solution.java)|Medium| |
