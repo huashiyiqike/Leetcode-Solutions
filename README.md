@@ -58,7 +58,7 @@ LeetCode
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n)|[py](./leetcode_py/Pow(x, n).py) [java](./leetcode_java/powx-n/Solution.java)|Medium| |
 |51|[N-Queens](https://leetcode.com/problems/n-queens)|[py](./leetcode_py/N-Queens.py) [java](./leetcode_java/n-queens/Solution.java)|Hard| |
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|[py](./leetcode_py/N-Queens II.py) [java](./leetcode_java/n-queens-ii/Solution.java)|Hard| |
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[py](./leetcode_py/Maximum Subarray.py) [java](./leetcode_java/maximum-subarray/Solution.java)|Medium| |
+|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|[py](./leetcode_py/Maximum Subarray.py) [js](./leetcode_js/Maximum Subarray.js) [ts](./leetcode_js/Maximum Subarray.ts) [java](./leetcode_java/maximum-subarray/Solution.java)|Medium| |
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|[py](./leetcode_py/Spiral Matrix.py) [java](./leetcode_java/spiral-matrix/Solution.java)|Medium| |
 |55|[Jump Game](https://leetcode.com/problems/jump-game)|[py](./leetcode_py/Jump Game.py) [java](./leetcode_java/jump-game/Solution.java)|Medium| |
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|[py](./leetcode_py/Merge Intervals.py) [java](./leetcode_java/merge-intervals/Solution.java)|Hard| |

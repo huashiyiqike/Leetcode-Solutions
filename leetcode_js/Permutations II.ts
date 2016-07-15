@@ -4,7 +4,7 @@
  */
  
 
-let helper: (nums: number[], res: number[][], path: number[], vis: boolean[])=>any = 
+let helper: (nums: number[], res: number[][], path: number[], vis: boolean[])=> void = 
 function(nums: number[], res: number[][], path: number[], vis: boolean[]){
 	if(path.length == nums.length){
 		res.push(path.slice());
