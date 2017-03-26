@@ -6,7 +6,7 @@ LeetCode
 
 | # |  Title | Solution | Difficulty | Analysis |
 |  --- | --- | --- | --- | --- | 
-|1|[Two Sum](https://leetcode.com/problems/two-sum)|[py](./leetcode_py/Two Sum.py) [js](./leetcode_js/Two Sum.js) [java](./leetcode_java/two-sum/Solution.java)|Easy| |
+|1|[Two Sum](https://leetcode.com/problems/two-sum)| [py](./leetcode_py/Two Sum.py) [js](./leetcode_js/Two Sum.js) [java](./leetcode_java/two-sum/Solution.java)|Easy| |
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|[py](./leetcode_py/Add Two Numbers.py) [js](./leetcode_js/Add Two Numbers.js) [java](./leetcode_java/add-two-numbers/Solution.java)|Medium| |
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[py](./leetcode_py/Longest Substring Without Repeating Characters.py) [js](./leetcode_js/Longest Substring Without Repeating Characters.js) [java](./leetcode_java/longest-substring-without-repeating-characters/Solution.java)|Medium|[essence](./analysis/Longest Substring Without Repeating Characters.md)|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[py](./leetcode_py/Median of Two Sorted Arrays.py) [js](./leetcode_js/Median of Two Sorted Arrays.js) [java](./leetcode_java/median-of-two-sorted-arrays/Solution.java)|Hard|[essence](./analysis/Median of Two Sorted Arrays.md)|
