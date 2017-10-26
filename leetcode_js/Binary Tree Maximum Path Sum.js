@@ -66,3 +66,35 @@ var maxPathSum = function(root) {
     helper(root, res);
     return res[0];
 };
+
+
+var maxPathSum = function(root) {
+    return helper(root)[0];
+ };
+function helper(root) {
+    console.log(root.val + '  root')
+    if(root.left == null && root.right == null) {
+        return [root.val, root.val];
+    }
+    var maxall3 = - Number.MAX_VALUE;
+    var maxsingle = - Number.MAX_VALUE;
+    var maxall1, maxall2, maxleft, maxright;
+    if(root.left != null) {
+        [maxall1, maxleft] = helper(root.left);
+        maxsingle = Math.max(maxsingle, root.val + maxleft, root.val);
+        maxall3 = Math.max(maxall3, maxall1, maxsingle); 
+    }
+    if(root.right != null) {
+        [maxall2, maxright] = helper(root.right);
+        maxsingle = Math.max(maxsingle, root.val + maxright, root.val);
+        maxall3 = Math.max(maxall3, maxall2, maxsingle); 
+    }
+   
+    if(root.left != null && root.right != null) {
+        maxsingle = Math.max(maxsingle, root.val + Math.max(maxleft, maxright), root.val);
+        maxall3 = Math.max(maxall3, root.val + maxleft + maxright, maxsingle);
+        
+    }
+   
+    return [maxall3, maxsingle];
+ }
