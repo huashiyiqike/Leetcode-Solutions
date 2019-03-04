@@ -1,3 +1,15 @@
+select Name as 'Customers'
+from Customers
+where Customers.id not in (select CustomerId from Orders)
+
+select C.Name as 'Customers'
+from Customers as C
+where not exists (
+    select CustomerId from Orders
+    where CustomerId = C.Id
+)
+
+
 select a.Name from Customers  a where a.Id not in (
 select a.Id
 from Customers a inner join Orders b on a.Id = b.CustomerId)

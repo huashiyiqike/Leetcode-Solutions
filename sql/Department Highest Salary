@@ -1,0 +1,35 @@
+# Write your MySQL query statement below
+# select D2.Name from Department as D2, Employee as E3
+#      where D2.id = E3.DepartmentId
+#     and D2.Name != ''
+    
+    
+select D.Name as 'Department', E.Name as 'Employee', Salary as 'Salary'
+from Employee E left join Department D
+on E.DepartmentId = D.Id
+where E.Salary = (select Max(E2.Salary) from Employee as E2 where E2.DepartmentId = E.DepartmentId)
+and D.Name is Not NULL
+
+select D.Name as 'Department', E.Name as 'Employee', Salary as 'Salary'
+from Employee E join Department D
+on E.DepartmentId = D.Id
+where E.Salary = (select Max(E2.Salary) from Employee as E2 where E2.DepartmentId = E.DepartmentId)
+and D.Name is Not NULL
+
+SELECT
+    Department.name AS 'Department',
+    Employee.name AS 'Employee',
+    Salary
+FROM
+    Employee
+        JOIN
+    Department ON Employee.DepartmentId = Department.Id
+WHERE
+    (Employee.DepartmentId , Salary) IN
+    (   SELECT
+            DepartmentId, MAX(Salary)
+        FROM
+            Employee
+        GROUP BY DepartmentId
+	)
+;

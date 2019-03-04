@@ -1,1 +1,5 @@
-https://leetcode.com/discuss/40116/simple-short-fast
+# Write your MySQL query statement below
+select Score, (select count(distinct Score) from Scores as s2 where Scores.Score < s2.Score)+1  as Rank
+from Scores
+#group by Id
+order by Score desc;

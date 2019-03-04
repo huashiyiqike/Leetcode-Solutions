@@ -1,6 +1,3 @@
-select Salary from Employee
-ordered by Salary
-
 Select MAX(Salary) from Employee where Salary < (Select MAX(Salary) from Employee)
 
 select (select distinct Salary from Employee order by salary desc limit 1,1) as Salary;
